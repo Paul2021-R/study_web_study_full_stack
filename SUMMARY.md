@@ -6,7 +6,8 @@
 
 ## haryu
 
-* [Page 1](haryu/page-1.md)
+* [Page 1](haryu/00_00.md)
+* [Page 2](haryu/00_01.md)
 
 ## hoh
 
