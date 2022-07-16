@@ -4,6 +4,8 @@ cover: .gitbook/assets/full-stack-devlopment-min.png
 coverY: -424.64309031556036
 ---
 
+[LINK](https://ryu-paul.gitbook.io/web_full_stack)
+
 # ⭐ 활동 방향성
 
 ## 활동 방향성
