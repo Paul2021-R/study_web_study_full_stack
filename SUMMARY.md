@@ -6,25 +6,25 @@
 
 ## haryu
 
-* [Page 1](haryu/00_00.md)
-* [Page 2](haryu/00_01.md)
+* [chapter 1](haryu/00.md)
+* [chapter 2](haryu/01.md)
 
 ## hoh
 
-* [Page 2](hoh/page-2.md)
+* [test_page](hoh/page-2.md)
 
 ## hyna
 
-* [Page 3](hyna/page-3.md)
+* [test_page](hyna/page-3.md)
 
 ## minsukan
 
-* [Page 4](minsukan/page-4.md)
+* [test_page](minsukan/page-4.md)
 
 ## sumsong
 
-* [Page 5](sumsong/page-5.md)
+* [test_page](sumsong/page-5.md)
 
 ## taeheoki
 
-* [Page 6](taeheoki/page-6.md)
+* [test_page](taeheoki/page-6.md)
