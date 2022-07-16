@@ -1,7 +1,7 @@
 ---
 description: 2022-07-16 갱신
 cover: .gitbook/assets/Untitled.png
-coverY: 450
+coverY: 500
 ---
 
 
