@@ -1,8 +1,9 @@
 ---
 description: 2022-07-16 갱신
 cover: .gitbook/assets/Untitled.png
-coverY: 434.7496617050067
+coverY: 450
 ---
+
 
 # ⭐ 활동 방향성
 
