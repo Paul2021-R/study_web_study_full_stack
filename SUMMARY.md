@@ -1,8 +1,8 @@
 # Table of contents
 
 * [⭐ 활동 방향성](README.md)
-* [📙 회의록](undefined-1/README.md)
-  * [2022-07-15](undefined-1/2022-07-15.md)
+* [📙 회의록](undefined/README.md)
+  * [2022-07-15](undefined/2022-07-15.md)
 
 ## haryu
 
