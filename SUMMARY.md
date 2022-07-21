@@ -6,7 +6,7 @@
 
 ## haryu
 
-* [chapter 1](haryu/00.md)
+* [스터디 세팅 가이드](haryu/00.md)
 * [chapter 2](haryu/01.md)
 
 ## hoh
