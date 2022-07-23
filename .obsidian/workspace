@@ -1,0 +1,141 @@
+{
+  "main": {
+    "id": "f92d02be278119a4",
+    "type": "split",
+    "children": [
+      {
+        "id": "f019a724db05cb62",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "haryu/02.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9000f98bf15843d0",
+    "type": "split",
+    "children": [
+      {
+        "id": "e140b0308ac9f2b6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "14f95b1b7968c809",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "457c3267e2ff94da",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ed5b16d8c9853070",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8d780357f13b2ef3",
+    "type": "split",
+    "children": [
+      {
+        "id": "caa49aa68bcdf06e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7f9e65c4bf295867",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "haryu/02.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "cbb5ba4bc1b6c901",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "haryu/02.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "92aefb73757bfdd4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "1971ba54657916a9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "haryu/02.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "f019a724db05cb62",
+  "lastOpenFiles": [
+    "haryu/01.md",
+    "haryu/02.md",
+    "haryu/00.md",
+    "haryu/src/000.png",
+    "src/스크린샷.md",
+    "src.md",
+    "src 1.md"
+  ]
+}
