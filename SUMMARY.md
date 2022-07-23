@@ -20,7 +20,7 @@
 
 ## minsukan
 
-* [test\_page](minsukan/page-4.md)
+* [0301](minsukan/03-01.md)
 
 ## sumsong
 
