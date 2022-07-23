@@ -20,7 +20,7 @@
 
 ## minsukan
 
-* [0301](minsukan/03-01.md)
+* [0301](minsukan/03-1.md)
 
 ## sumsong
 
