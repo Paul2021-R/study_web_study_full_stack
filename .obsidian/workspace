@@ -7,11 +7,9 @@
         "id": "f019a724db05cb62",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "image",
           "state": {
-            "file": "haryu/02.md",
-            "mode": "source",
-            "source": false
+            "file": "haryu/src/000.png"
           }
         }
       }
@@ -77,7 +75,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "haryu/02.md",
+                "file": "haryu/src/000.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +92,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "haryu/02.md",
+                "file": "haryu/src/000.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +115,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "haryu/02.md"
+                "file": "haryu/src/000.png"
               }
             }
           }
@@ -128,10 +126,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "f019a724db05cb62",
+  "active": "14f95b1b7968c809",
   "lastOpenFiles": [
-    "haryu/01.md",
     "haryu/02.md",
+    "haryu/01.md",
     "haryu/00.md",
     "haryu/src/000.png",
     "src/스크린샷.md",
