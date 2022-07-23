@@ -16,7 +16,7 @@
 
 ## hyna
 
-* [test_page](hyna/page-3.md)
+* [Chapter 01-03](hyna/Chapter_01-03.md)
 
 ## minsukan
 
