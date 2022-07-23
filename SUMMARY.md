@@ -12,20 +12,20 @@
 
 ## hoh
 
-* [test_page](hoh/page-2.md)
+* [test\_page](hoh/page-2.md)
 
 ## hyna
 
-* [Chapter 01-03](hyna/Chapter_01-03.md)
+* [Chapter 01-03](hyna/Chapter\_01-03.md)
 
 ## minsukan
 
-* [test_page](minsukan/page-4.md)
+* [test\_page](minsukan/page-4.md)
 
 ## sumsong
 
-* [test_page](sumsong/page-5.md)
+* [test\_page](sumsong/page-5.md)
 
 ## taeheoki
 
-* [test_page](HTML+CSS+자바스크립트.md)
+* [test\_page](taeheoki/test\_page.md)
