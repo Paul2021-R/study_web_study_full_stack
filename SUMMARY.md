@@ -28,4 +28,4 @@
 
 ## taeheoki
 
-* [test_page](taeheoki/page-6.md)
+* [test_page](HTML+CSS+자바스크립트.md)
