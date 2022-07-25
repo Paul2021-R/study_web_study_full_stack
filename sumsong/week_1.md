@@ -1,7 +1,10 @@
 # 1주차
-#### 01 웹 개발 시작하기
-#### 02 웹 개발 환경 만들기
-#### 03 HTML 기본 문서 만들기
+#### [01 웹 개발 시작하기](https://github.com/Paul2021-R/web_study_full_stack/blob/sumsong/sumsong/week_1.md#01-%EC%9B%B9-%EA%B0%9C%EB%B0%9C-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-1)
+#### [02 웹 개발 환경 만들기](https://github.com/Paul2021-R/web_study_full_stack/blob/sumsong/sumsong/week_1.md#02-%EC%9B%B9-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EB%A7%8C%EB%93%A4%EA%B8%B0-1)
+#### [03 HTML 기본 문서 만들기](https://github.com/Paul2021-R/web_study_full_stack/blob/sumsong/sumsong/week_1.md#03-html-%EA%B8%B0%EB%B3%B8-%EB%AC%B8%EC%84%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0-1)
+   
+   
+===
    
    
 # 01 웹 개발 시작하기
@@ -23,12 +26,13 @@
 	- PHP => CodeIgniter
    
    
-# 02 웹 개발 환경 만들기
+# 02 웹 개발 환경 만들기   
+   
    
 # 03 HTML 기본 문서 만들기
 ## 03-2 HTML 구조 파악하기
-### 웹 브라우저에 문서 정보를 알려 주는 <head> 태그
-#### 문자 세트를 비롯해 문서 정보가 들어 있는 <meta> 태그
+### 웹 브라우저에 문서 정보를 알려 주는 `<head>` 태그
+#### 문자 세트를 비롯해 문서 정보가 들어 있는 `<meta>` 태그
 <meta> 태그의 가장 중요한 역할 : 화면에 글자를 표시할 때 어떤 인코딩을 사용할지 지정하는 것.   
 웹 서버는 영어가 기본이므로 한글을 표시할 때는 UTF-8이라는 문자 세트를 사용한다고 알려줘야 함.   
 `<meta charset="UTF-8">`   
@@ -42,7 +46,7 @@
 ...
 ## 03-4 웹 문서 구조를 만드는 시맨틱 태그
 ### 시맨틱 태그 알아보기
-HTML의 태그는 그 이름만 봐도 의미를 알 수 있어 **시맨틱(semantic) 태그**
+HTML의 태그는 그 이름만 봐도 의미를 알 수 있어 **시맨틱(semantic) 태그**   
 *시맨틱(semantic) : 의미론적인, 의미가 통하는
    
 ### 시맨틱 태그는 왜 필요할까
@@ -57,7 +61,7 @@ HTML의 태그는 그 이름만 봐도 의미를 알 수 있어 **시맨틱(sema
 #### 독립적인 콘텐츠를 담는 `<article>` 태그
 #### 콘텐츠 영역을 나타내는 `<section>` 태그
 - `<section>` 태그는 몇 개의 콘텐츠를 묶는 용도로 사용
-- `<article>` 태그는 블로그의 포스트처럼 독립된 콘첸트로 사용
+- `<article>` 태그는 블로그의 포스트처럼 독립된 콘첸트로 사용   
 *단순히 스타일을 적용하려고 콘텐츠를 묶으려면 `<section>` 태그 대신 `<div>` 태그를 사용
    
 #### 사이드 바 영역을 나타내는 `<aside>` 태그
