@@ -12,7 +12,7 @@
 
 ## hoh
 
-* [test\_page](hoh/page-2.md)
+* [chapter 2](hoh/04-04.%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%82%BD%EC%9E%85%ED%95%98%EA%B8%B0.md)
 
 ## hyna
 
