@@ -16,7 +16,8 @@
 
 ## hyna
 
-* [Chapter 01-03](hyna/Chapter\_01-03.md)
+* [Chapter 01-03](hyna/Chapter_01-03.md)
+* [Chapter 04](hyna/Chapter_04.md)
 
 ## minsukan
 
