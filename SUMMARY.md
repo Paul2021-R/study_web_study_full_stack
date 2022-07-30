@@ -21,6 +21,7 @@
 ## minsukan
 
 * [0301](minsukan/03-1.md)
+* [2주차 04-1 ~ 04-6](minsukan/웹스터디2주차/웹스터디2주차.md)
 
 ## sumsong
 
