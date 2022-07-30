@@ -29,3 +29,4 @@
 ## taeheoki
 
 * [HTML+CSS+자바스크립트](taeheoki/HTML+CSS+자바스크립트.md)
+* [2주차 - HTML 다양한 태그](taeheoki/04.md)
