@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="html_practice">
+	<meta name="description" content="Let's try HTML docs, and use so many tags.">
+	<meta name="author" content="haryu">
+	<link rel="stylesheet" href="css/custom.css">
+	<title>Practice_#2weeks</title>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<a href="practice_01.html"><h1>Paul's<br>ShowCase</h1></a>
+		</div>
+	</header>
+	<main>
+		<div id="mainMenu">
+			<p>본 페이지는 표 만들기를 위한 챕터 연습 내용입니다.</p>
+			<div id="customTable">
+			<table>
+				<caption>기본 테이블</caption>
+				<tr>
+					<th>1번 제목</th>
+					<th>2번 제목</th>
+					<th>3번 제목</th>
+				</tr>
+				<tr>
+					<td>1번셀</td>
+					<td>2번셀</td>
+					<td>3번셀</td>
+				</tr>
+				<tr>
+					<td>1번셀</td>
+					<td>2번셀</td>
+					<td>3번셀</td>
+				</tr>
+			</table>
+			<p></p>
+			<div id="customTable">
+				<table>
+					<colgroup>
+						<col style="background-color:#feefaa;">
+						<col>
+						<col style="width:200px";>
+					</colgroup>
+					<thead>
+						<th>이건</th>
+						<th>thead</th>
+						<th>속성이야</th>
+					</thead>
+						<tr>
+							<td rowspan="2">이건 rowspan을 섞은것이고</td>
+							<td colspan="2">colspan과 함께 tbody 이야</td>
+						</tr>
+						<tr>
+							<td>2번셀</td>
+							<td>3번셀</td>
+						</tr>
+					<tbody>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td>이건</td>
+							<td>tfoot</td>
+							<td>속성이야</td>
+						</tr>
+						<tr>
+							<td>1번셀</td>
+							<td>2번셀</td>
+							<td>3번셀</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+			<p></p>
+			</div>
+			
+
+		</div>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_01.html">홈으로</a></li>
+				<li><a href="introduction.html">자기소개</a></li>
+				<li><a href="projects.html">프로젝트</a></li>
+				<li><a href="policy.html">개인정보방침</a></li>
+				<li><a href="sitemap.html">사이트맵</a></li>
+				<li><a href="contact.html">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>
