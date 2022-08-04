@@ -38,10 +38,10 @@
 | target | action 속성에서 지정한 스크립트 파일을 현재 창이 아닌 다른 위치에서 열도록 함 |
 | autocomplete | 자동 완성 기능. 예전에 입력한 내용을 자동으로 표시함. 기본 속성 값은 “on”. 매우 중요한 정보나 일회성 정보 입력 “off”로 지정하는 것이 좋음. |
 
-```html
-<!-- 입력한 정보 서버로 전송시 서버에 있는 register.php 실행시키겠다고 선언하기-->
-<form action="register.php"><!--폼 요소--></form>
-```
+  ```html
+  <!-- 입력한 정보 서버로 전송시 서버에 있는 register.php 실행시키겠다고 선언하기-->
+  <form action="register.php"><!--폼 요소--></form>
+  ```
 
 ### `<fieldset>`, `<legend>`태그로 폼 요소를 그룹으로 묶기
 
@@ -65,16 +65,16 @@
 
 예시
 
-```html
-<form action="">
-    <fieldset>
-      <legend>상품 선택</legend>
-    </fieldset>
-    <fieldset>
-      <legend>배송 정보</legend>
-    </fieldset>      
-</form>
-```
+  ```html
+  <form action="">
+      <fieldset>
+        <legend>상품 선택</legend>
+      </fieldset>
+      <fieldset>
+        <legend>배송 정보</legend>
+      </fieldset>      
+  </form>
+  ```
 
 ![큰 글씨로 레드향 주문하기가 쓰여있고, 아래에 상품 정보와 배송 정보 폼이 수직으로 나열되어있다.](https://user-images.githubusercontent.com/91731260/182740894-c6b77421-3111-413f-b4b7-1b757ce7edb7.png)
 
@@ -85,7 +85,7 @@
 <aside>
 💡 Q. 그렇다면 레이블은 무엇인가요?
 
-A. 레이블이란 입력란 가까이에 아이디나 비밀번호처럼 붙여놓은 텍스트를 말합니다. `<lable>` 태그를 사용하면 폼 요소와 레이블 텍스트가 서로 연결되었다는 것을 웹 브라우저가 쉽게 알 수 있습니다.
+  A. 레이블이란 입력란 가까이에 아이디나 비밀번호처럼 붙여놓은 텍스트를 말합니다. `<lable>` 태그를 사용하면 폼 요소와 레이블 텍스트가 서로 연결되었다는 것을 웹 브라우저가 쉽게 알 수 있습니다.
 
 </aside>
 
@@ -150,7 +150,7 @@ A. 레이블이란 입력란 가까이에 아이디나 비밀번호처럼 붙여
       <label>비밀번호: <input type="password" id="user_pw" size="10"></label>
       <input type="submit" value="로그인">
     </fieldset>
-  </form>
+</form>
 ```
 
 ![image](https://user-images.githubusercontent.com/91731260/182741483-b8cbf833-06aa-4c41-9c43-938c47af77dd.png)
