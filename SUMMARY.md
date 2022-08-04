@@ -40,7 +40,9 @@
 
 ## sumsong
 
-* [test\_page](sumsong/page-5.md)
+* [week 1](sumsong/week_1.md)
+* [week 2](sumsong/week_2.md)
+* [week 3](sumsong/week_3.md)
 
 ## taeheoki
 
