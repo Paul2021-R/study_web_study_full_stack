@@ -7,8 +7,10 @@
 ## haryu
 
 * [스터디 세팅 가이드](haryu/00.md)
-* [chapter 1](haryu/01.md)
-* [chapter 2](haryu/02.md)
+* [front_chapter 1](haryu/01.md)
+* [front_chapter 2](haryu/02.md)
+* [front_chapter 3](haryu/03.md)
+* [front_chapter 4](haryu/04.md)
 
 ## hoh
 
@@ -26,11 +28,14 @@
 
 ## hyna
 
-* [Chapter 01-03](hyna/Chapter\_01-03.md)
+* [Chapter 01-03](hyna/Chapter_01-03.md)
+* [Chapter 04](hyna/Chapter_04.md)
+* [Chapter 05](hyna/Chapter_05.md)
 
 ## minsukan
 
 * [0301](minsukan/03-1.md)
+* [2주차 04-1 ~ 04-6](minsukan/웹스터디2주차/웹스터디2주차.md)
 
 ## sumsong
 
@@ -39,3 +44,4 @@
 ## taeheoki
 
 * [HTML+CSS+자바스크립트](taeheoki/HTML+CSS+자바스크립트.md)
+* [2주차 - HTML 다양한 태그](taeheoki/04.md)
