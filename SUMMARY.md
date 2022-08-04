@@ -21,6 +21,10 @@
 * [chapter 4-2](hoh/04-02.%20%EB%AA%A9%EB%A1%9D%20%EB%A7%8C%EB%93%A4%EA%B8%B0.md)
 * [chapter 4-3](hoh/04-03.%20%ED%91%9C%20%EB%A7%8C%EB%93%A4%EA%B8%B0.md)
 * [chapter 4-4](hoh/04-04.%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%82%BD%EC%9E%85%ED%95%98%EA%B8%B0.md)
+* [chapter 5-1](hoh/05-01.%ED%8F%BC%20%EC%82%BD%EC%9E%85%ED%95%98%EA%B8%B0.md)
+* [chapter 5-2](hoh/05-02.%20input%ED%83%9C%EA%B7%B8%20-%20type%20%EC%86%8D%EC%84%B1.md)
+* [chapter 5-3](hoh/05-03.%20input%20%ED%83%9C%EA%B7%B8%20-%20%EA%B7%B8%20%EC%99%B8%20%EC%86%8D%EC%84%B1.md)
+* [chapter 5-4](hoh/05-04.%20%EB%8B%A4%EB%A5%B8%20%ED%83%9C%EA%B7%B8%EB%93%A4.md)
 
 ## hyna
 
