@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="html_practice">
+	<meta name="description" content="Let's try HTML docs, and use so many tags.">
+	<meta name="author" content="haryu">
+	<link rel="stylesheet" href="css/custom.css">
+	<title>Practice_#3rd_weeks</title>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<a href="practice_01.html"><h1>Paul's<br>ShowCase</h1></a>
+		</div>
+	</header>
+	<main>
+		<div id="mainMenu">
+			<form action="" autocomplete="on">
+				<p><label>검색</label><input type="search" size="100"></p>
+				<fieldset>
+					<legend>개인정보</legend>
+					<p><lable for="user-id">아이디<input type="text" size="12" maxlength="12" id="user-id" placeholder="아이디를 입력하세요" autofocus required></lable></p>
+					<p><lable>비밀번호<input type="password" size="12" maxlength="12" required></lable></p>
+					<p><lable>전화번호<input type="tel"></lable></p>
+					<p><lable>홈페이지<input type="url" size="30"></lable></p>
+					<p>
+						<lable for="check1">체크 박스(중복 가능)</lable>
+						<p><input type="checkbox" id="check1">선택지 1</p>
+						<p><input type="checkbox" id="check1">선택지 2</p>
+						<p><input type="checkbox" id="check1">선택지 3</p>
+					</p>
+					<p>
+						<lable for="radio_1">라디어 버튼(중복 불가)</lable>
+						<p><input type="radio" id="radio_1" name="gift" value="no" required>선택지 1</p>
+						<p><input type="radio" id="radio_1" name="gift" value="no">선택지 2</p>
+						<p><input type="radio" id="radio_1" name="gift" value="no">선택지 3</p>
+					</p>
+					<p>
+						<p><label>숫자 입력<input type="number" min="0" max="100" step="2" value="50"></label></p>
+						<p><label>범위 숫자 입력<input type="range" min="0" max="100" step="2" value="50"></label></p>
+					</p>
+					<p>
+						<p><label>달력 입력_1<input type="date" min="2022-08-04" max="2022-08-30"></label></p>
+						<p><label>달력 입력_2<input type="date | month"></label></p>
+						<p><label>달력 입력_3<input type="date | month | week"></label></p>
+					</p>
+					<p>
+						<p><label>시간 입력 1<input type="time"> </label></p>
+						<p><label>시간 입력 2<input type="time | datetime-local"> </label></p>
+					</p>
+				</fieldset>
+				<fieldset>
+					<p><legend>임시 정보</legend></p>
+					<p><label>영수증 첨부하기<br><input type="file"></label></p>
+					<p><textarea placeholder="내용을 입력해 주세요" style="width:400px; height:100px;" row="10"></textarea></p>
+					<p>
+						<label for="drop_down_1">선택지</label><br>
+						<select id="drop_down_1" style="width:200px;">
+							<option value="1">내용1</option>
+							<option value="2">내용2</option>
+							<option value="3" selected>내용3_기본값</option>
+							<option value="4">내용4</option>
+							<option value="5">내용5</option>
+						</select>
+					</p>
+					<p>
+						<lable for="data_list">데이터 목록 만들기</lable>
+						<p>
+							<input type="text" list="data_list">
+							<datalist id="data_list">
+								<option value="@gmail.com">@gmail.com</option>
+								<option value="@naver.com">@naver.com</option>
+								<option value="@daum.net">@daum.net</option>
+							</datalist>
+						</p>
+					</p>
+				</fieldset>
+				<p><input type="submit" style="margin-left:10px;" value="회원가입하기"></p>
+				<p>
+					<button type="submit">이거 버튼인듯_전송</button>
+					<button type="reset">이거 버튼인듯_리셋</button>
+					<button type="button">이거 버튼인듯_자바 실행용</button>
+				</p>
+			</form>
+		</div>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_01.html">홈으로</a></li>
+				<li><a href="introduction.html">자기소개</a></li>
+				<li><a href="projects.html">프로젝트</a></li>
+				<li><a href="policy.html">개인정보방침</a></li>
+				<li><a href="sitemap.html">사이트맵</a></li>
+				<li><a href="contact.html">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

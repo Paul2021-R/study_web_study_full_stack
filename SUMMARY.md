@@ -7,8 +7,10 @@
 ## haryu
 
 * [스터디 세팅 가이드](haryu/00.md)
-* [chapter 1](haryu/01.md)
-* [chapter 2](haryu/02.md)
+* [front_chapter 1](haryu/01.md)
+* [front_chapter 2](haryu/02.md)
+* [front_chapter 3](haryu/03.md)
+* [front_chapter 4](haryu/04.md)
 
 ## hoh
 
