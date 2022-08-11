@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>레드향 주문하기</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>상품 선택</legend>
+      <p><b>주문할 상품을 선택해 주세요.</b></p>
+      <ul>
+        <li>
+          <label><input type="checkbox" value="s_3">선물용 3kg</label>
+          <input type="number" min="0" max="5">개 (최대 5개)
+        </li>
+        <li>
+          <label><input type="checkbox" value="s_5">선물용 5kg</label>
+          <input type="number" min="0" max="3" value="1">개 (최대 3개)
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <label><input type="checkbox" value="f_3">가정용 3kg</label>
+          <input type="range" min="0" max="5">개 (최대 5개)
+        </li>
+        <li>
+          <label><input type="checkbox" value="f_5">가정용 5kg</label>
+          <input type="range" min="0" max="3" value="1">개 (최대 3개)
+        </li>
+      </ul>      
+      <p><b>포장 선택</b></p>
+      <ul>
+        <li><label><input type="radio" name="gift" value="yes">선물 포장</label></li>
+        <li><label><input type="radio" name="gift" value="no">선물 포장 안 함</label></li>
+      </ul>    
+    </fieldset>
+  </form>
+</body>
+</html>
