@@ -136,9 +136,13 @@ CSS애서는 색상을 지정할 때 주로 rgb와 rgba로 표현한다. rgba에
 
 > &nbsp;
 > **vscode로 색 추출하기**
-> ![image](https://user-images.githubusercontent.com/91731260/184116829-f622c90a-dc3c-427d-83ee-af6a09efb2a3.png)
-> 색상값을 입력하고 마우스를 가져다대면 위의 화면이 뜨는 데, 이때 원하는 색을 선택하면 알아서 rgb/rgba 값으로 바꿔서 파일에 입력해준다.
-> ![image](https://user-images.githubusercontent.com/91731260/184117376-4167a422-dfd2-4bda-9302-0f24010f9850.png)
-> 위의 값이 뜨는 부분을 클릭할 시 원하는 형태로 바꿀 수 있다.
 > &nbsp;
+> ![image](https://user-images.githubusercontent.com/91731260/184116829-f622c90a-dc3c-427d-83ee-af6a09efb2a3.png)
+> <br>
+> 색상값을 입력하고 마우스를 가져다대면 위의 화면이 뜨는 데, 이때 원하는 색을 선택하면 알아서 rgb/rgba 값으로 바꿔서 파일에 입력해준다.
+> <br>
+> ![image](https://user-images.githubusercontent.com/91731260/184117376-4167a422-dfd2-4bda-9302-0f24010f9850.png)
+> <br>
+> 위의 값이 뜨는 부분을 클릭할 시 원하는 형태로 바꿀 수 있다.
+> <br>
 
