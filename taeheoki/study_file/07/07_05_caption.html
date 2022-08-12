@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Try to CSS setting.">
+	<meta name="author" content="taeheoki">
+	<title>다양한 표 스타일</title>
+	<style>
+		.table1 {
+			caption-side: top; /* 표 캡션 위치 위로 */
+		}
+		.table2 {
+			caption-side: bottom; /* 표 캡션 위치 아래로 */
+			border: 1px solid black; /* 표 테두리는 검은색 실선으로 */
+		}
+		td, th {
+			border: 1px dotted black;
+			padding: 10px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>다양한 표 스타일을 활용해서 표를 꾸며보자.</h1>
+		</div>
+	</header>
+	<main>
+		<table class="table1">
+			<caption>cation-side top test</caption>
+			<tr>
+				<th>test_th</th>
+				<td>test_td</td>
+				<td>test_td</td>
+			</tr>
+			<tr>
+				<th>test_th</th>
+				<td>test_td</td>
+				<td>test_td</td>
+			</tr>
+			<tr>
+				<th>test_th</th>
+				<td>test_td</td>
+				<td>test_td</td>
+			</tr>
+		</table>
+		<br>
+		<table class="table2">
+			<caption>cation-side bottom test</caption>
+			<tr>
+				<th>test_th</th>
+				<td>test_td</td>
+				<td>test_td</td>
+			</tr>
+			<tr>
+				<th>test_th</th>
+				<td>test_td</td>
+				<td>test_td</td>
+			</tr>
+			<tr>
+				<th>test_th</th>
+				<td>test_td</td>
+				<td>test_td</td>
+			</tr>
+		</table>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_07.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

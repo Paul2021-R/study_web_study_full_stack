@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Try to CSS setting.">
+	<meta name="author" content="taeheoki">
+	<title>선택자 우선순위</title>
+  <style>
+    p {
+      color: black;
+    }
+    h1 {
+      color: brown !important;
+    }
+    p {
+      color: blue;
+    }
+    h1 {
+      color: black;
+    }
+  </style>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>Chapter_06:선택자 우선순위 확인</h1></a>
+		</div>
+	</header>
+	<main>
+    <h1>h1 스타일의 경우 뒤에 설정이 되었으나 !important로 인해 먼저 설정된 brown이 표현되고 있다.</h1>
+    <p>p태그 설정이 뒤에 이루어진 blue가 표현되고 있다.</p>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_06.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>
