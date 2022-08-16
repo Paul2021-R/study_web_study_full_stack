@@ -1,10 +1,8 @@
 # 1주차
-#### [01 웹 개발 시작하기](https://github.com/Paul2021-R/web_study_full_stack/blob/sumsong/sumsong/week_1.md#01-%EC%9B%B9-%EA%B0%9C%EB%B0%9C-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-1)
-#### [02 웹 개발 환경 만들기](https://github.com/Paul2021-R/web_study_full_stack/blob/sumsong/sumsong/week_1.md#02-%EC%9B%B9-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EB%A7%8C%EB%93%A4%EA%B8%B0-1)
-#### [03 HTML 기본 문서 만들기](https://github.com/Paul2021-R/web_study_full_stack/blob/sumsong/sumsong/week_1.md#03-html-%EA%B8%B0%EB%B3%B8-%EB%AC%B8%EC%84%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0-1)
 <br>
 
-* * *
+---
+<br>
 
 # 01 웹 개발 시작하기
 - `프론트엔드` 영역
