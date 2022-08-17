@@ -1,0 +1,120 @@
+/* 외부 스타일 적용용 */
+*{
+	margin: 0;
+}
+
+#background {
+	width: 100vw;
+	height: 2340px;
+	background-image: url(main-back.jpeg);
+	background-size: 100vw;
+	background-color: white;
+}
+
+#back_1 {
+	background-color: hsla(0, 0%, 100%, 0.7);
+	margin-top: 50px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+	width: 95vw;
+	height: 2300px;
+	border-radius: 21px;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 15px;
+	float: left;
+}
+
+.blockLeft {
+	padding: 40px;
+	width: 15vw;
+	height: 2300px;
+	box-sizing: border-box;
+	border-top-left-radius: 21px;
+	border-bottom-left-radius: 21px;
+	/* background-color: white; */
+	float:left;
+}
+
+.blockRight {
+	padding: 40px;
+	width: 80vw;
+	height: 2300px;
+	background-color: white;
+	box-sizing: border-box;
+	border-top-right-radius: 21px;
+	border-bottom-right-radius: 21px;
+	margin-left: 15vw;
+}
+
+.dot {
+	width : 23px;
+	height : 23px;
+	border-radius: 23px;
+	border: 1px solid #707070;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.Red {
+	background-color: #FA5150;
+}
+
+.Yellow {
+	background-color: #F9BD00;
+}
+
+.Green {
+	background-color: #0FCD1E;
+}
+
+#profileImg {
+	display: block;
+	clear: left;
+	border-radius: 60px;
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+
+.marginRule20 {
+	display: block;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 28px;
+	display: block;
+	margin-bottom: 20px;
+}
+
+h3 {
+	color: gray;
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+
+ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+.listIcon {
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	/* background-color: white; */
+	display: inline;
+	float: left;
+}
+
+.listText {
+	font-size: 20px;
+	font-weight: 550;
+	margin-top: 20px;
+}
+
+li {
+	height: 40px;
+	color: rgb(81, 81, 81);
+	padding: 10px;
+}
