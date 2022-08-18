@@ -47,6 +47,7 @@
 * [Chapter 05](hyna/Chapter\_05.md)
 * [Chapter 06](hyna/Chapter\_06.md)
 * [Chapter 07](hyna/Chapter\_07.md)
+* [Chapter 08](hyna/Chapter\_08.md)
 
 ## minsukan
 
