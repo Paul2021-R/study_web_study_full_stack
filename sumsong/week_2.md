@@ -1,11 +1,5 @@
-# week 2
-
-## 2주차
-
-[**04 웹 문서에 다양한 내용 입력하기**](https://github.com/Paul2021-R/web\_study\_full\_stack/new/sumsong/sumsong#04-%EC%9B%B9-%EB%AC%B8%EC%84%9C%EC%97%90-%EB%8B%A4%EC%96%91%ED%95%9C-%EB%82%B4%EC%9A%A9-%EC%9E%85%EB%A0%A5%ED%95%98%EA%B8%B0-1)
-
-\
-
+# 2주차
+<br>
 
 ***
 
