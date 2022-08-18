@@ -7,10 +7,10 @@
 ## haryu
 
 * [스터디 세팅 가이드](haryu/00.md)
-* [front_chapter 1](haryu/01.md)
-* [front_chapter 2](haryu/02.md)
-* [front_chapter 3](haryu/03.md)
-* [front_chapter 4](haryu/04.md)
+* [front\_chapter 1](haryu/01.md)
+* [front\_chapter 2](haryu/02.md)
+* [front\_chapter 3](haryu/03.md)
+* [front\_chapter 4](haryu/04.md)
 
 ## hoh
 
@@ -42,20 +42,27 @@
 
 ## hyna
 
-* [Chapter 01-03](hyna/Chapter_01-03.md)
-* [Chapter 04](hyna/Chapter_04.md)
-* [Chapter 05](hyna/Chapter_05.md)
+* [Chapter 01-03](hyna/Chapter\_01-03.md)
+* [Chapter 04](hyna/Chapter\_04.md)
+* [Chapter 05](hyna/Chapter\_05.md)
+* [Chapter 06](hyna/Chapter\_06.md)
+* [Chapter 07](hyna/Chapter\_07.md)
 
 ## minsukan
 
 * [0301](minsukan/03-1.md)
-* [2주차 04-1 ~ 04-6](minsukan/웹스터디2주차/웹스터디2주차.md)
+* [2주차 04-1 \~ 04-6](minsukan/웹스터디2주차/웹스터디2주차.md)
+* [3주차 05-1 \~ 05-4](minsukan/웹스터디3주차/웹스터디3주차.md)
+* [4주차 06 \~ 07](minsukan/웹스터디4주차/웹스터디4주차.md)
 
 ## sumsong
 
-* [test\_page](sumsong/page-5.md)
+* [week 1](sumsong/week\_1.md)
+* [week 2](sumsong/week\_2.md)
+* [week 3](sumsong/week\_3.md)
 
 ## taeheoki
 
 * [HTML+CSS+자바스크립트](taeheoki/HTML+CSS+자바스크립트.md)
 * [2주차 - HTML 다양한 태그](taeheoki/04.md)
+* [3주차 - HTML form 태그](taeheoki/05.md)
