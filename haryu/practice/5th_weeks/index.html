@@ -7,10 +7,31 @@
 	<meta name="author" content="haryu">
 	<link rel="stylesheet" href="./src/practice.css">
 	<title>Haryu's ShowCase</title>
+	<style>
+	.h1_up {
+		display: inline-block;
+		text-align: center;
+		position: absolute;
+		top: 70px;
+	}
+
+	.upperImg {
+		display: inline;
+	}
+	/* @font-face { */
+		/* font-family: NotoSerifKR; */
+		/* src: url("src/Noto_Serif_KR/NotoSerifKR-Light.otf") format('otf'); */
+	/* } */
+
+	/* .NotoFont { */
+		/* font-family: 'NotoSerifKR', serif;  */
+		/* font-weight: 200; */
+	/* } */
+	</style>
 </head>
 <body id="background">
 	<div id="back_1">
-		<div class="blockLeft">
+		<div class="blockLeft NotoFont">
 			<div class="dot Red"></div>
 			<div class="dot Yellow"></div>
 			<div class="dot Green"></div>
@@ -25,7 +46,22 @@
 				<img class="listIcon" src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1634122260/noticon/xrxfesjohxkyff1d9bno.png"><li><span class="listText">모든 태그들</span></li>
 			</ul>
 		</div>
-		<div class="blockRight">
+		<div class="blockRight NotoFont">
+			<img class="upperImg" src="./src/arraow.png">
+			<span class="h1_up"><h1>Hello world!</h1></span>
+			<ul style="float: right; ">
+				<li class="liNoBullet"><img style="text-align: center ;" src="src/dark_mode.png"></li>
+				<li class="liNoBullet"><img style="text-align: center ;" src="src/all.png"></li>
+				<li class="liNoBullet"><img style="text-align: center ;" src="src/view.png"></li>
+				<li class="liNoBullet"><img style="text-align: center ;" src="src/share.png"></li>
+				<li class="liNoBullet"><img style="text-align: center ;" src="src/search.png"></li>
+			</ul>
+			<div class="blockRightInfoDir">
+			Home <span style="color: black;">/</span> hello world
+			</div>
+			<div class="blockRightInfoCommon"><h2 style="font-size: 40px; margin:0;">Hello World!</h2></div>
+			<div class="blockRightInfoCommon"><h3 style="font-size: 25px;">2022 - 08 - 18</h3></div>
+			<div style="width: 80vw; font-size: 20px; font-size: inherit;"><embed class="blockRightContent" type="text/plain" src="./src/04.md"></div>
 		</div>
 	</div>
 </body>
