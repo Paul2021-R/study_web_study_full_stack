@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about CSS & Box model.">
+	<meta name="author" content="taeheoki">
+	<title>Chapter_08</title>
+	<style>
+		div {
+			margin-bottom:20px;
+		}
+		body {
+			background-color: #ffff00; /* 배경색은 어둡게 지정 */
+		}
+		#container {
+			background-color: #fff;
+			width: 600px;					/* 가로 너비 600px */
+			margin: 20px auto;		/* 위아래 마진은 20px씩, 좌우 마진은 자동 계산 */
+			padding: 20px;
+		}
+		#container2 {
+			background-color: #fff;
+			margin: 20px auto;		/* 위아래 마진은 20px씩, 좌우 마진은 자동 계산 */
+			padding: 20px;
+		}
+		.container3 {
+			background-color: #fff;
+			width: 50px;					/* 가로 너비 600px */
+			margin: 20px auto;		/* 위아래 마진은 20px씩, 좌우 마진은 자동 계산 */
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div id="container">
+			<h1>08-3 margin을 통해 정렬해보자.</h1></a>
+		</div>
+	</header>
+	<main>
+		<div id="container">
+			<p>궁금한게 width가 꼭 지정되어 있어야하는것인가?</p>
+		</div>
+		<div id="container2">
+			<p>아하 width가 지정이 안되어 있으면 전체 한줄이 영역이 되니깐 의미가 없어지는구나</p>
+		</div>
+		<div>
+			<span margin:50px;>1번 span 요소</span><span padding:50px;">2번 span 요소</span>
+		</div>
+		<div id="container2">인라인레벨 요소에는 마진 설정을 못하는 건가?</div>
+	</main>
+	<footer>
+		<div id="container">
+			<ul>
+				<li><a href="practice_08.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>
