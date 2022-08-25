@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about CSS & Box model.">
+	<meta name="author" content="taeheoki">
+	<title>09-3 그라데이션 만들기</title>
+  <style>
+    .grad1 {
+      width:500px;
+      height:300px;
+      border-radius:10px;
+      background: blue; /* CSS3를 지원하지 않는 웹 브라우저용 */
+      background: linear-gradient(to right bottom, blue, white); /* 왼쪽 위에서 오른쪽 아래 방향으로, 파란색에서 흰색으로 */
+    }
+    .grad2 {
+      width:500px;
+      height:300px;
+      border-radius:10px;
+      background: blue; /* CSS3를 지원하지 않는 웹 브라우저용 */
+      background: linear-gradient(to bottom, #06f, white 30%, #06f); /* 왼쪽 위에서 오른쪽 아래 방향으로, 파란색에서 흰색으로 */
+    }
+  </style>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>09-3 그라데이션 만들기</h1></a>
+		</div>
+	</header>
+	<main>
+		<div id="mainMenu">
+			<h2>배경 이미지 넣어보기.</h2>
+      <div class="grad1"></div>
+      <div class="grad2"></div>
+		</div>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_09.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>
