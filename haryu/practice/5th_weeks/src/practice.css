@@ -7,9 +7,13 @@
 #background {
 	width: 100vw;
 	height: 100vh;
-	background-image: url(main-back.png);
-	background-size: 120vw;
-	background-color: white;
+	background: hsl(247, 31%, 59%) url(main-back.png) no-repeat center top fixed;
+	/* background-color: hsl(247, 31%, 59%); */
+	/* background-repeat: no-repeat; */
+	/* background-attachment: fixed; */
+	/* 위의 세줄은 지울 수 있음 */
+	/* background-position-y: 100%; */
+	background-size: cover;
 }
 
 #back_1 {
@@ -143,4 +147,63 @@ li {
 	width: 76vw;
 	margin: 40px;
 	overflow: auto;
+}
+
+.contentCommon {
+	font-size: 20px;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.linearGrad {
+	width: 300px; 
+	height: 100px;
+	margin: 5px;
+	background: blue;
+}
+
+.linearGradColorRight {
+	background: linear-gradient(to right, blue, white);
+}
+
+.linearGradColorLeft {
+	background: linear-gradient(to left, blue, white);
+}
+
+.linearGradColorTop {
+	background: linear-gradient(to top, blue, white);
+}
+
+.linearGradColorBottom {
+	background: linear-gradient(to bottom, blue, white);
+}
+
+.linearGradColorMix {
+	background: linear-gradient(to bottom, blue, white 30%, blue);
+}
+
+.CircleGrad {
+	width: 400px;
+	height: 400px;
+	background: rgb(255, 83, 255)
+}
+
+.CircleGrad1 {
+	background: radial-gradient(circle closest-side, white, rgb(255, 83, 255), white);
+}
+
+.CircleGrad2 {
+	background: radial-gradient(circle closest-corner at 20% 10%, white, rgb(255, 83, 255), white);
+}
+
+.CircleGrad3 {
+	background: radial-gradient(circle farthest-side at 20% 10%, white, rgb(255, 83, 255), white);
+}
+
+.CircleGrad4 {
+	background: radial-gradient(circle farthest-corner at 20% 10%, white, rgb(255, 83, 255), white);
 }
