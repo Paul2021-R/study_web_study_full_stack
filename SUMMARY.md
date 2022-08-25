@@ -67,6 +67,7 @@
 * [week 3](sumsong/week_3.md)
 * [week 4](sumsong/week_4.md)
 * [week 5](sumsong/week_5.md)
+* [week 6](sumsong/week_6.md)
 
 ## taeheoki
 
