@@ -39,6 +39,9 @@
 * [chapter 8-3](hoh/08-03.%20padding%2C%20margin%20%EC%8A%A4%ED%83%80%EC%9D%BC.md)
 * [chapter 8-4](hoh/08-04.%20%EC%9B%B9%20%EB%AC%B8%EC%84%9C%20%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83.md)
 * [chapter 8-5](hoh/08-05.%20position%20%EC%86%8D%EC%84%B1.md)
+* [chapter 9-1](hoh/09-01.%20%EB%B0%B0%EA%B2%BD%EC%83%89%EA%B3%BC%20%EB%B0%B0%EA%B2%BD%20%EB%B2%94%EC%9C%84%20%EC%A7%80%EC%A0%95.md)
+* [chapter 9-2](hoh/09-02.%20%EB%B0%B0%EA%B2%BD%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%A7%80%EC%A0%95%ED%95%98%EA%B8%B0.md)
+* [chapter 9-3](hoh/09-03.%20%EA%B7%B8%EB%9D%BC%EB%8D%B0%EC%9D%B4%EC%85%98%20%ED%9A%A8%EA%B3%BC%20%EC%A3%BC%EA%B8%B0.md)
 
 ## hyna
 
@@ -73,3 +76,4 @@
 * [4주차 - CSS의 기본](taeheoki/06.md)
 * [4주차 - 텍스트를 표현하는 다양한 스타일](taeheoki/07.md)
 * [5주차 - 레이아웃을 구성하는 CSS 박스 모델](taeheoki/08.md)
+* [6주차 - 이미지와 그라데이션 효과로 배경 꾸미기](taeheoki/09.md)
