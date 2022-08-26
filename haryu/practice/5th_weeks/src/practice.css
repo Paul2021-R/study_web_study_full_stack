@@ -199,7 +199,7 @@ a {
 .CircleGrad2 {
 	background: radial-gradient(circle closest-corner at 20% 10%, white, rgb(255, 83, 255), white);
 }
-
+~
 .CircleGrad3 {
 	background: radial-gradient(circle farthest-side at 20% 10%, white, rgb(255, 83, 255), white);
 }
