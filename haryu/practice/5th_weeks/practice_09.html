@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="html_practice">
+	<meta name="description" content="Let's try HTML docs, and use so many tags.">
+	<meta name="author" content="haryu">
+	<link rel="stylesheet" href="./src/practice.css">
+	<title>Haryu's ShowCase</title>
+	<script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
+	<script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+	<style>
+	.h1_up {
+		display: inline-block;
+		text-align: center;
+		position: absolute;
+		top: 70px;
+	}
+
+	.upperImg {
+		display: inline;
+	}
+	/* @font-face { */
+		/* font-family: NotoSerifKR; */
+		/* src: url("src/Noto_Serif_KR/NotoSerifKR-Light.otf") format('otf'); */
+	/* } */
+
+	/* .NotoFont { */
+		/* font-family: 'NotoSerifKR', serif;  */
+		/* font-weight: 200; */
+	/* } */
+	</style>
+</head>
+<body id="background">
+	<div id="back_1">
+		<div class="blockLeft NotoFont">
+			<div class="dot Red"></div>
+			<div class="dot Yellow"></div>
+			<div class="dot Green"></div>
+			<img id="profileImg" src="./src/profile.png">
+			<p><h2>Hansol Ryu</h2></p>
+			<p><h3 style="margin-bottom: 30px;">Junior Programmer<br>Growth hacker..</h3></p>
+			<p><h3># Tags</h3></p>
+			<ul>
+				<img class="listIcon" src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1568175385/noticon/iodu1jssf0kwe4oie2dt.png"><li><span class="listText">Docker</span></li>
+				<img class="listIcon" src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566557264/noticon/eyhvbmh82nhdoydl4j2a.png"><li><span class="listText">Java Script</span></li>
+				<img class="listIcon" src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1567070889/noticon/otinww0jdkhz7ninctnu.png"><li><span class="listText">C Language</span></li>
+				<img class="listIcon" src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1634122260/noticon/xrxfesjohxkyff1d9bno.png"><li><span class="listText">모든 태그들</span></li>
+			</ul>
+		</div>
+		<div class="blockRight NotoFont">
+			<img class="upperImg" src="./src/arraow.png">
+			<span class="h1_up"><h1>09 이미지와 그라데이션 효과로 배경 꾸미기</h1></span>
+			<ul style="float: right; ">
+				<li class="liNoBullet"><img style="text-align: center ;" src="src/dark_mode.png"></li>
+				<li class="liNoBullet"><img style="text-align: center ;" src="src/all.png"></li>
+				<li class="liNoBullet"><img style="text-align: center ;" src="src/view.png"></li>
+				<li class="liNoBullet"><img style="text-align: center ;" src="src/share.png"></li>
+				<li class="liNoBullet"><img style="text-align: center ;" src="src/search.png"></li>
+			</ul>
+			<div class="blockRightInfoDir">
+			Home <span style="color: black;">/</span> 09 이미지와 그라데이션 효과로 배경 꾸미기
+			</div>
+			<div class="blockRightInfoCommon"><h2 style="font-size: 30px; margin:0;">09 이미지와 그라데이션 효과로 배경 꾸미기</h2></div>
+			<div class="blockRightInfoCommon"><h3 style="font-size: 20px;">2022 - 08 - 25</h3></div>
+			<!-- <div style="width: 80vw;"><zero-md  class="blockRightContent" src="./src/04.md"></zero-md></div> -->
+			<div style="margin: 40px; width: 75vw; height: 55vh; overflow: scroll;">
+				<p><h3>선형 그라데이션 예시</h3></p>
+				<p>right</p>
+				<p class="linearGrad linearGradColorRight" ></p>
+				<p>left</p>
+				<p class="linearGrad linearGradColorLeft"></p>
+				<p>top</p>
+				<p class="linearGrad linearGradColorTop"></p>
+				<p>bottom</p>
+				<p class="linearGrad linearGradColorBottom"></p>
+				<p>색상 중지점 활용</p>
+				<p class="linearGrad linearGradColorMix"></p>
+				<p><h3>원형 그라데이션 예시</h3></p>
+				<p>closest-side</p>
+				<p class="CircleGrad CircleGrad1"></p>
+				<p>closest-corner</p>
+				<p class="CircleGrad CircleGrad2"></p>
+				<p>farthest-side</p>
+				<p class="CircleGrad CircleGrad3"></p>
+				<p>farthest-corner</p>
+				<p class="CircleGrad CircleGrad4"></p>
+			</div>
+			<div class="contentCommon"><h3><a href="./index.html">HOME 으로 돌아가기</a></h3></div>
+		</div>
+	</div>
+</body>
+</html> 

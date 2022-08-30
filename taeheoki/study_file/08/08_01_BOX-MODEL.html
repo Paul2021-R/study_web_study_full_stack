@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about CSS & Box model.">
+	<meta name="author" content="taeheoki">
+	<title>Chapter_08</title>
+  <style>
+    body  * {
+      border:1px solid blue;
+    }
+    .accent {
+      color:red;
+      font-weight:bold;
+    }
+  </style>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>08-1 CSS와 박스 모델에 대해 알아보자</h1></a>
+		</div>
+	</header>
+	<main>
+    <div class="block-level">
+      <h1>블록레벨 요소를 사용해보자.</h1>
+      <h1>h1: 이처럼 블록레벨 요소는</h1>
+      <div>div: 다른 요소와 공간을 공유하지 않는다.<p>p: 이처럼 다른 요소가 들어갈 경우</p>이와 같이 다른 공간으로 넘어가서 한 줄을 모두 점유한다.</div>
+    </div>
+    <br>
+    <hr>
+    <hr>
+    <br>
+    <div class="inline-level">
+      <h1>인라인레벨 요소를 사용해보자.</h1>
+      <div>div: div라는 block-level 요소 사이에 <span>span: span과 같은 inline-level 요소가 들어가도 다음 줄로 넘어가기 보다 span의 컨텐츠 영역만 가져간다.</span></div>
+    </div>
+  </main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_08.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

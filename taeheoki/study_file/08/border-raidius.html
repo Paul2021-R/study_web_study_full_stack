@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about CSS & Box model.">
+	<meta name="author" content="taeheoki">
+	<title>Chapter_08</title>
+	<style>
+		div {
+			margin-bottom:20px;
+		}
+		#round1 {
+			border-radius: 25px;
+		}
+		#round2 {
+			border-radius: 50%;
+		}
+		#individual {
+			border: 2px solid blue;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>08-2 테두리를 직각이 아닌 굴곡을 줘보자.</h1></a>
+		</div>
+	</header>
+	<main>
+		<div>
+			<div>
+				<img src="images/cat.jpg">
+				<img id="round1" src="images/cat.jpg">
+				<img id="round2" src="images/cat.jpg">
+			</div>
+			<div>
+				<img id="individual" src="images/cat.jpg">
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_08.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>
