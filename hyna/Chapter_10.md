@@ -57,8 +57,7 @@ h1 + p { color: blue; } /* h1 요소의 형제인 p요소 중에서 첫 번째 p
 > ---|---|---
 > `h1 + p + p`|![image](https://user-images.githubusercontent.com/91731260/187863566-19942563-813e-4d15-ba5d-3e0bde6cecc2.png) | ![image](https://user-images.githubusercontent.com/91731260/187864437-2cda1ea8-f28a-417f-9c8c-2b11f71857a3.png)
 > `p + p` | ![image](https://user-images.githubusercontent.com/91731260/187872080-2496158f-5f04-4fce-809a-966182837a60.png) | ![image](https://user-images.githubusercontent.com/91731260/187872255-62227b1a-39b0-4179-8595-540d2a1bb3a5.png)
-> &nbsp;
-> &nbsp;
+> <br>
 
 
 #### 형제 선택자
@@ -80,8 +79,7 @@ h1 ~ p { color: blue; } /*h1 요소 뒤에 오는 모든 p요소*/
 > ---|---|---
 > `h1 ~ p` | ![image](https://user-images.githubusercontent.com/91731260/187873824-7d1f5ae8-0d02-4500-bcd2-d04b3ec129b9.png)|![image](https://user-images.githubusercontent.com/91731260/187874023-eaaaa750-819e-4ae8-a694-8a23488e294e.png)
 > `p ~ p` | ![image](https://user-images.githubusercontent.com/91731260/187874303-e788e750-2e2b-46ed-9c9a-361e534abc79.png)|![image](https://user-images.githubusercontent.com/91731260/187874438-295cb067-a5e2-40c5-b003-92a12496b272.png)
-> &nbsp;
-> &nbsp;
+> <br>
 
 ## 10-2 속성 선택자
 
