@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about CSS selector.">
+	<meta name="author" content="taeheoki">
+	<title>Chapter_10</title>
+	<style>
+		#container {
+			text-align:center;
+			color:#2b2b2b;
+		}
+		table, tb, th {
+			border:1px solid #ccc;
+		}
+		table {
+			width:200px;
+			margin:0 auto;
+			border-collapse:collapse;
+		}
+		td {			
+			text-align:left;
+			padding:10px;
+			padding-left:20px;
+		}
+		table tr:nth-of-type(2n+1) {  /* 홀수 번째 열에만 스타일 적용 */
+			background:lightgray;
+			color:black;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>10-3 앵커 대상에 스타일 적용하기</h1>
+		</div>
+	</header>
+	<main>
+    <div id="container">
+      <h1>웹 개발</h1>
+      <table>
+        <tr>
+          <td>HTML</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+        </tr>
+        <tr>
+          <td>Javascirpt</td>
+        </tr>
+        <tr>
+          <td>React</td>
+        </tr>
+        <tr>
+          <td>node.js</td>
+        </tr>			
+      </table>
+    </div>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_10.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

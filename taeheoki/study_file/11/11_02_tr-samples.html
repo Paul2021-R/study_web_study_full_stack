@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about transition and animation.">
+	<meta name="author" content="taeheoki">
+	<title>Chapter_11</title>
+	<style>
+		main div {
+			width: 100px;
+			height: 100px;
+			float: left;
+			margin: 30px;
+		}
+		main .bg-tr{
+			background-color:skyblue;
+			transition:all ease 1s; 
+		}
+		main .bg-tr:hover {
+			background-color:blue;
+		}
+		main .border-tr {
+			background-color: orange;
+			border: 3px solid black;
+			transition: all linear 1.5s;
+		}
+		main .border-tr:hover {
+			border: 3px solid red;
+			border-radius: 50%;
+		}
+		ul {
+			clear: left;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>11-1 이미지 회전하며 원근감 주기</h1></a>
+		</div>
+	</header>
+	<main>
+		<div class="bg-tr">	</div>
+		<div class="border-tr"></div>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_11.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

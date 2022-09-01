@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about CSS selector.">
+	<meta name="author" content="taeheoki">
+	<title>Chapter_10</title>
+	<style>
+		.container {
+		width: 960px;
+		margin : 0 auto;
+	}
+	.navi{
+		width:960px;
+		height:60px;
+		padding-bottom:10px;
+		border-bottom:2px solid #ccc;
+	}
+	.navi ul{
+		list-style: none;
+		padding-top:10px; 
+		padding-bottom:5px;
+	}
+	.navi ul li {
+		float:left;
+		width:150px;
+		padding:10px;   
+	}
+	.navi a:link, .navi a:visited{
+		display:block;
+		font-size:14px;
+		color:#000;
+		padding: 10px; 
+		text-decoration: none;  /* 밑줄 없앰 */
+		text-align: center;
+	}
+	.navi a:hover,  .navi a:focus {
+		background-color:#222;  /* 배경 색 */
+		color:#fff;  /* 글자 색 */
+	}
+	.navi a:active {
+		background-color:#f00;  /* 배경 색 */
+	}
+	input {
+		width:100%;
+		height:30px;
+	}
+	input:focus {
+		background-color: grey;
+	}
+	</style>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>10-3 가상 클래스 선택자를 사용해 링크 스타일 적용해보자</h1>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<nav class="navi">
+				<ul>
+					<li><a href="#">이용 안내</a></li>
+					<li><a href="#">객실 소개</a></li>
+					<li><a href="#">예약 방법 및 요금</a></li>
+					<li><a href="#">예약하기</a></li>
+				</ul>
+			</nav>  
+		</div>
+		<input type="text" name="아무거나">
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_10.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>
