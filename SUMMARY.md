@@ -42,6 +42,12 @@
 * [chapter 9-1](hoh/09-01.%20%EB%B0%B0%EA%B2%BD%EC%83%89%EA%B3%BC%20%EB%B0%B0%EA%B2%BD%20%EB%B2%94%EC%9C%84%20%EC%A7%80%EC%A0%95.md)
 * [chapter 9-2](hoh/09-02.%20%EB%B0%B0%EA%B2%BD%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%A7%80%EC%A0%95%ED%95%98%EA%B8%B0.md)
 * [chapter 9-3](hoh/09-03.%20%EA%B7%B8%EB%9D%BC%EB%8D%B0%EC%9D%B4%EC%85%98%20%ED%9A%A8%EA%B3%BC%20%EC%A3%BC%EA%B8%B0.md)
+* [chapter 10-1](hoh/10-01.%20%EC%97%B0%EA%B2%B0%20%EC%84%A0%ED%83%9D%EC%9E%90.md)
+* [chapter 10-2](hoh/10-02.%20%EC%86%8D%EC%84%B1%20%EC%84%A0%ED%83%9D%EC%9E%90.md)
+* [chapter 10-3](hoh/10-03.%20%EA%B0%80%EC%83%81%20%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EA%B0%80%EC%83%81%20%EC%9A%94%EC%86%8C.md)
+* [chapter 11-1](hoh/11-01.%20%ED%8A%B8%EB%9E%9C%EC%8A%A4%ED%8F%BC.md)
+* [chapter 11-2](hoh/11-02.%20%ED%8A%B8%EB%9E%9C%EC%A7%80%EC%85%98.md)
+* [chapter 11-3]()
 
 ## hyna
 
@@ -52,6 +58,7 @@
 * [Chapter 07](hyna/Chapter\_07.md)
 * [Chapter 08](hyna/Chapter\_08.md)
 * [Chapter 09](hyna/Chapter\_09.md)
+* [Chapter 10](hyna/Chapter\_09.md)
 
 ## minsukan
 
@@ -59,6 +66,9 @@
 * [2주차 04-1 \~ 04-6](minsukan/웹스터디2주차/웹스터디2주차.md)
 * [3주차 05-1 \~ 05-4](minsukan/웹스터디3주차/웹스터디3주차.md)
 * [4주차 06 \~ 07](minsukan/웹스터디4주차/웹스터디4주차.md)
+* [5주차 08](minsukan/웹스터디5주차/웹스터디5주차.md)
+* [6주차 09](minsukan/웹스터디6주차/웹스터디6주차.md)
+* [7주차 10 ~ 11](minsukan/웹스터디7주차/웹스터디7주차.md)
 
 ## sumsong
 
@@ -78,3 +88,5 @@
 * [4주차 - 텍스트를 표현하는 다양한 스타일](taeheoki/07.md)
 * [5주차 - 레이아웃을 구성하는 CSS 박스 모델](taeheoki/08.md)
 * [6주차 - 이미지와 그라데이션 효과로 배경 꾸미기](taeheoki/09.md)
+* [7주차 - CSS 고급 선택자](taeheoki/10.md)
+* [7주차 - 트랜지션과 애니메이션](taeheoki/11.md)

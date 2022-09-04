@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about transition and animation.">
+	<meta name="author" content="taeheoki">
+	<title>Chapter_11</title>
+	<style>
+		.box {
+			margin:20px auto;
+			width: 100px;
+			height: 100px;
+			background-color: #07f;
+			border: 1px solid #222;
+			transition-property: width, height;  /* 트랜지션 대상 - 너비, 높이 */
+			transition-duration: 2s, 1s;  /* 트랜지션 시간 - 2초, 1초 */
+		}
+		.box:hover {
+			width:200px;
+			height:120px;		
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>11-2 트랜지션 대상과 진행 시간 지정하기</h1></a>
+		</div>
+	</header>
+	<main>
+		<div class="box"></div>	
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_11.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>
