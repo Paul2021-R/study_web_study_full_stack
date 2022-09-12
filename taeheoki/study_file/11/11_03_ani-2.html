@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about transition and animation.">
+	<meta name="author" content="taeheoki">
+	<title>Chapter_11</title>
+	<style>
+		.box {
+			width: 100px;
+			height: 100px;
+			margin: 60px auto;      
+			animation: rotate 1.5s infinite, background 1.5s infinite alternate;
+		}
+
+		@keyframes rotate {  /* 0도 -> x축 -180도 회전 -> y축 -180도 회전 */
+			from { transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+			50% { transform: perspective(120px) rotateX(-180deg) rotateY(0deg); }
+			to { transform: perspective(120px) rotateX(-180deg) rotateY(-180deg); }
+		}
+
+		@keyframes background {  /* 배경색 빨강 -> 초록 -> 파랑 */
+			from { background-color: red; }
+			50% { background-color: green }
+			to { background-color: blue; }
+		}
+		footer {
+			clear:left;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>11-3 애니메이션 2개를 한꺼번에 지정하기</h1></a>
+		</div>
+	</header>
+	<main>
+		<div class="box">	</div>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_11.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

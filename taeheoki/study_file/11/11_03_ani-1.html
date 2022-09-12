@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about transition and animation.">
+	<meta name="author" content="taeheoki">
+	<title>Chapter_11</title>
+	<style>
+		#container{
+			width:500px;
+			margin:20px auto;
+		}
+		.box{
+			width: 100px;
+			height: 100px;
+			float:left;
+			margin:50px;
+		}
+		#box1 {
+			background-color: #4cff00;					/* 연두색 박스 */
+			border: 1px solid transparent;			/* 1px짜리 투명 테두리 */
+			animation-name: shape;							/* 애니메이션 지정 */
+			animation-duration: 3s;							/* 애니메이션 실행 시간 */
+			animation-iteration-count: infinite;
+		}
+		#box2 {
+			background-color: #8f06b0;					/* 보라색 박스 */
+			border: 1px solid transparent;			/* 1px짜리 투명 테두리 */
+			animation-name: rotate;							/* 애니메이션 지정 */
+			animation-duration: 3s;							/* 애니메이션 실행 시간 */
+			animation-iteration-count: infinite;
+		}
+		@keyframes shape {
+			from { border: 1px solid transparent; }	/* 1px짜리 투명 테두리에서 */
+			to {
+				border: 1px solid #000;	/* 검은색 테두리로 변경 */
+				border-radius: 50%;					/* 테두리를 둥글게 변경 */
+			}
+		}
+		@keyframes rotate {
+			from { transform: rotate(0deg); } /* 0도에서 시작해서 */
+			to { transform: rotate(45deg); } /* 45도에서 회전하기 */
+		}
+		footer {
+			clear:left;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>11-3 애니메이션의 지점, 이름, 실행 시간 적용하기</h1></a>
+		</div>
+	</header>
+	<main>
+		<div id="container">
+			<div class="box" id="box1"></div>
+			<div class="box" id="box2"></div>
+		</div>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_11.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>
