@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about transition and animation.">
+	<meta name="author" content="taeheoki">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chapter_12</title>
+	<style>
+	.container {
+    width:100%;
+      height:150px;
+      display:flex;
+      background-color:#eee;
+      border:1px solid #222;
+      margin-bottom:20px;
+		}
+		.box {
+			padding:5px 45px;
+			margin:5px;   
+			width:80px;
+			background-color:#222;   
+		}
+		#opt1{
+      align-items: flex-start;
+		}
+		#opt2{
+      align-items: flex-end;
+    }
+    #opt3{
+      align-items: center;
+    }
+    #opt4{
+      align-items: baseline;
+    }
+    #opt5{
+      align-items: stretch;
+    }
+		p {
+			color:#fff;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>12-4 플렉스 박스에서 교차축 정렬 방법 지정하기</h1></a>
+		</div>
+	</header>
+	<main>
+		<div class="container" id="opt1">
+			<div class="box"><p>1</p></div>
+			<div class="box"><p>2</p></div>
+			<div class="box"><p>3</p></div>
+			<div class="box"><p>4</p></div>
+		</div>
+		<div class="container" id="opt2">
+			<div class="box"><p>1</p></div>
+			<div class="box"><p>2</p></div>
+			<div class="box"><p>3</p></div>
+			<div class="box"><p>4</p></div>
+		</div>
+    <div class="container" id="opt3">
+			<div class="box"><p>1</p></div>
+			<div class="box"><p>2</p></div>
+			<div class="box"><p>3</p></div>
+			<div class="box"><p>4</p></div>
+		</div>
+    <div class="container" id="opt4">
+			<div class="box"><p>1</p></div>
+      <div class="box"><p style="font-size:14px;">2</p></div>
+      <div class="box"><p style="font-size:25px;">3</p></div>
+      <div class="box"><p style="font-size:10px">4</p></div>
+		</div>
+    <div class="container" id="opt5" style="height: 200px">
+			<div class="box"><p>1</p></div>
+			<div class="box"><p>2</p></div>
+			<div class="box"><p>3</p></div>
+			<div class="box"><p>4</p></div>
+		</div>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_12.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about transition and animation.">
+	<meta name="author" content="taeheoki">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chapter_12</title>
+	<style>
+		#wrapper{
+				width: 600px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: minmax(100px, auto);
+			}
+		.items{
+			padding:10px;
+			background-color:#eee;
+		}   
+		.items:nth-child(odd){
+			background-color:#bbb;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>12-5 그리드 박스에서 칼럼과 줄 지정하기</h1>
+		</div>
+	</header>
+	<main>
+		<div id="wrapper">
+			<div class="items">이렇게 치면 왜 저렇게 나올까? 어라라히ㅏㄱ히자구히ㅏㄹ누히ㅜ지다ㅜ히자뒤쟈두피자ㅜ푸재ㅏ퓡나ㅜ피ㅏㅈ구ㅐ퍄ㅐㄴ자ㅡㅍㄴㅇ피ㅏㅑㅗ대ㅑㄷㄱㅎ닿;리ㅡㅎ;리ㅏㅎ;리ㅏㅎㄹ;ㅣㅎㅇ;ㄹ히ㅏ;대갛;ㄷ개ㅏㅎ;ㄷ기하;ㅣ랗;ㄹ이ㅏㅎfljghowrg;wg;dlsmg;sdlfg;wrjoknwlrn </div>
+			<div class="items">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+			<div class="items">Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+			<div class="items">Lorem ipsum dolor sit.Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+			<div class="items">Lorem, ipsum dolor.</div>
+			<div class="items">한글만 칠 떄는 잘 적용되는 것 같으나 영어가 들어가면 1fr이 잘 적용되지 않는것 같다. 이유는 무엇일까?</div>
+		</div>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_12.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>
