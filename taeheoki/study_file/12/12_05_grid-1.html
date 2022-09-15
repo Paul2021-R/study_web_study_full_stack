@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about transition and animation.">
+	<meta name="author" content="taeheoki">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chapter_12</title>
+	<style>
+		#wrapper{
+				display:grid;
+				/*grid-template-columns: 200px 200px 200px;*/
+				grid-template-columns: repeat(3, 1fr);
+				/*grid-template-rows:100px;*/
+				grid-template-rows: repeat(3, 80px);
+			}
+		.items{
+			padding:10px;
+			background-color:#eee;
+		}   
+		.items:nth-child(odd){
+			background-color:#bbb;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>12-5 그리드 박스에서 칼럼과 줄 지정하기</h1>
+		</div>
+	</header>
+	<main>
+		<div id="wrapper">
+			<div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, reprehenderit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. </div>
+			<div class="items">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+			<div class="items">Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+			<div class="items">Lorem ipsum dolor sit.Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+			<div class="items">Lorem, ipsum dolor.</div>
+		</div>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_12.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

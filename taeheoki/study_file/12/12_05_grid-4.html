@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about transition and animation.">
+	<meta name="author" content="taeheoki">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chapter_12</title>
+	<style>
+		#wrapper{
+        display:grid;
+        grid-template-columns:repeat(3, 200px);  /* 너비 200px인 칼럼 3개 */
+        grid-template-rows: minmax(100px, auto);  
+        grid-gap:20px 30px;  /* 칼럼 간격 30px, 줄 간격 20px  */
+        /* grid-column-gap:30px; */
+        /* grid-row-gap:20px; */
+      }
+      .items{
+        padding:15px;
+        background-color:#eee;
+      }   
+      .items:nth-child(odd){
+        background-color:#bbb;
+      }
+	</style>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>12-5 그리드 항목의 간격 지정하기</h1>
+		</div>
+	</header>
+	<main>
+		<div id="wrapper">
+      <div class="items">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nesciunt magni voluptatem.</div>
+      <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="items">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius nulla corrupti porro!</div>
+      <div class="items">Lorem ipsum dolor sit.</div>
+      <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quos!</div>
+      <div class="items">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro odit quam sit.</div>
+    </div>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_12.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

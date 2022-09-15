@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about transition and animation.">
+	<meta name="author" content="taeheoki">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chapter_12</title>
+	<style>
+		#wrapper{
+        width:700px;
+        display:grid;
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-rows:repeat(3, 100px);
+      }
+      .box{
+        padding:15px;
+        color:#fff;
+        font-weight:bold;
+        text-align:center;
+      }   
+      .box1 {
+        background-color:#3689ff;
+        grid-column:1/4;
+      }
+      .box2 {
+        background-color:#00cf12;
+        grid-row:2/4;
+        /* grid-column:1/2; */
+        grid-column-start:1;
+      }
+      .box3 {
+        background-color:#ff9019;
+        grid-column:2/4;
+        /* grid-row:2/3; */
+        grid-row-start:2;
+        }
+      .box4 {
+        background-color:#ffd000;
+        grid-column-start:3;
+        grid-row-start:3;
+      }
+	</style>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>12-5 그리드 라인을 사용해서 항목 배치하기 - 칼럼, 줄 지정</h1>
+		</div>
+	</header>
+	<main>
+		<div id="wrapper">
+      <div class="box box1">box1</div>
+      <div class="box box2">box2</div>
+      <div class="box box3">box3</div>
+      <div class="box box4">box4</div>
+    </div>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_12.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>
