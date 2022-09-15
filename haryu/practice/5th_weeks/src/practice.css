@@ -1,0 +1,209 @@
+/* 외부 스타일 적용용 */
+
+*{
+	margin: 0;
+}
+
+#background {
+	width: 100vw;
+	height: 100vh;
+	background: hsl(247, 31%, 59%) url(main-back.png) no-repeat center top fixed;
+	/* background-color: hsl(247, 31%, 59%); */
+	/* background-repeat: no-repeat; */
+	/* background-attachment: fixed; */
+	/* 위의 세줄은 지울 수 있음 */
+	/* background-position-y: 100%; */
+	background-size: cover;
+}
+
+#back_1 {
+	background-color: hsla(0, 0%, 100%, 0.7);
+	margin-top: 50px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+	width: 95vw;
+	height: 90vh;
+	border-radius: 21px;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 15px;
+	float: left;
+}
+
+.blockLeft {
+	padding: 40px;
+	width: 15vw;
+	height: 90vh;
+	box-sizing: border-box;
+	border-top-left-radius: 21px;
+	border-bottom-left-radius: 21px;
+	/* background-color: white; */
+	float:left;
+}
+
+.blockRight {
+	padding: 12px 0px;
+	width: 80vw;
+	height: 90vh;
+	background-color: white;
+	box-sizing: border-box;
+	border-top-right-radius: 21px;
+	border-bottom-right-radius: 21px;
+	margin-left: 15vw;
+}
+
+.dot {
+	width : 23px;
+	height : 23px;
+	border-radius: 23px;
+	border: 1px solid #707070;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.Red {
+	background-color: #FA5150;
+}
+
+.Yellow {
+	background-color: #F9BD00;
+}
+
+.Green {
+	background-color: #0FCD1E;
+}
+
+#profileImg {
+	display: block;
+	clear: left;
+	border-radius: 60px;
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+
+.marginRule20 {
+	display: block;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 28px;
+	display: block;
+	margin-bottom: 20px;
+}
+
+h3 {
+	color: gray;
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+
+ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+.listIcon {
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	/* background-color: white; */
+	display: inline;
+	float: left;
+}
+
+.listText {
+	font-size: 20px;
+	font-weight: 550;
+	margin-top: 20px;
+}
+
+li {
+	height: 40px;
+	color: rgb(81, 81, 81);
+	padding: 10px;
+}
+
+.liNoBullet {
+	display: inline-block;
+	position: relative;
+	right: 40px;
+}
+
+.blockRightInfoDir{
+	margin: 20px 40px 10px 40px;
+	color: #3B95C4;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.blockRightInfoCommon {
+	margin: 10px 40px 10px 40px;
+}
+
+.blockRightContent {
+	display: block;
+	height: 50vh;
+	width: 76vw;
+	margin: 40px;
+	overflow: auto;
+}
+
+.contentCommon {
+	font-size: 20px;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.linearGrad {
+	width: 300px; 
+	height: 100px;
+	margin: 5px;
+	background: blue;
+}
+
+.linearGradColorRight {
+	background: linear-gradient(to right, blue, white);
+}
+
+.linearGradColorLeft {
+	background: linear-gradient(to left, blue, white);
+}
+
+.linearGradColorTop {
+	background: linear-gradient(to top, blue, white);
+}
+
+.linearGradColorBottom {
+	background: linear-gradient(to bottom, blue, white);
+}
+
+.linearGradColorMix {
+	background: linear-gradient(to bottom, blue, white 30%, blue);
+}
+
+.CircleGrad {
+	width: 400px;
+	height: 400px;
+	background: rgb(255, 83, 255)
+}
+
+.CircleGrad1 {
+	background: radial-gradient(circle closest-side, white, rgb(255, 83, 255), white);
+}
+
+.CircleGrad2 {
+	background: radial-gradient(circle closest-corner at 20% 10%, white, rgb(255, 83, 255), white);
+}
+~
+.CircleGrad3 {
+	background: radial-gradient(circle farthest-side at 20% 10%, white, rgb(255, 83, 255), white);
+}
+
+.CircleGrad4 {
+	background: radial-gradient(circle farthest-corner at 20% 10%, white, rgb(255, 83, 255), white);
+}

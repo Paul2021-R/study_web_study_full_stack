@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about CSS selector.">
+	<meta name="author" content="taeheoki">
+	<title>Chapter_10</title>
+	<style>
+		ul { list-style:none; }
+		li {
+			display:inline-block;
+			margin:10px;
+		}
+		li a {
+			padding: 5px 20px;
+			font-size: 14px;
+			color: blue;
+			text-decoration: none;
+		}
+		a[title |= "us"] {  /* 속성값이 "us"이거나 "us-"로 시작하는 요소를 찾는 선택자 */
+			background: url(images/us.png) no-repeat left center;
+		}
+		a[title |= "jap"] {  /* 속성값이 "jap"이거나 "jap-"로 시작하는 요소를 찾는 선택자 */
+			background: url(images/jp.png) no-repeat left center;
+		}
+		a[title |= "chn"] {  /* 속성값이 "chn"이거나 "chn-"로 시작하는 요소를 찾는 선택자 */
+			background: url(images/ch.png) no-repeat left center;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>10-2 속성 선택자를 사용해보자</h1></a>
+		</div>
+	</header>
+	<main>
+		<ul>
+			<li>외국어 서비스 : </li>
+			<li><a href="#" title="us-english">영어</a></li>
+			<li><a href="#" title="ja">일본어</a></li>
+			<li><a href="#" title="chn">중국어</a></li>
+		</ul>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_10.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

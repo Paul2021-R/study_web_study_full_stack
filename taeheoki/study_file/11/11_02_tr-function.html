@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about transition and animation.">
+	<meta name="author" content="taeheoki">
+	<title>Chapter_11</title>
+	<style>
+		#ex div{
+			float:left;
+			width:100px;
+			height:50px;
+			margin:5px 10px;
+			padding:5px;
+			color:white;
+			background-color:#006aff;
+			border-radius:5px;
+			text-align:center;
+			font-weight:bold;	
+		}
+		#ex:hover div{
+			height:400px;
+		}
+		#ex .ease {
+			transition: 3s ease;
+		}
+		#ex .linear{
+			transition:3s linear;
+		}
+		#ex .ease-in{
+			transition:3s ease-in;
+		}
+		#ex .ease-out{
+			transition:3s ease-out;
+		}
+		#ex .ease-in-out{
+			transition:3s ease-in-out;
+		}
+		ul {
+			clear: left;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>11-2 트랜지션의 속도 곡선의 속성값을 비교</h1></a>
+		</div>
+	</header>
+	<main>
+		<div id="ex">
+			<div class="ease"> ease </div>
+			<div class="linear"> linear </div>
+			<div class="ease-in"> ease-in </div>
+			<div class="ease-out"> ease-out </div>
+			<div class="ease-in-out"> ease-in-out </div>
+		</div>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_11.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>
