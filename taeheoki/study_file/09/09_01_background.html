@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about CSS & Box model.">
+	<meta name="author" content="taeheoki">
+	<title>09-1 배경을 설정해보자</title>
+	<style>
+		body {
+			background-color: green;
+		}
+		div {
+			background-color: pink;
+		}
+		.p {
+			background-color: red;
+		}
+		.back {
+			background-color: white;
+		}
+		.desc {
+      border:5px dotted #222;
+      background-color:#ffd9a0;
+      width:350px;
+      padding:20px;
+      margin-right:20px;
+      float:left;
+    }
+		#clip-border { background-clip: border-box; }		/* 테두리까지 배경 지정 */
+		#clip-padding { background-clip: padding-box; }	/* 테두리를 뺀 패딩 범위까지 배경 지정 */
+		#clip-content { background-clip: content-box; }	/* 컨텐츠에만 배경 지정 */
+		footer {
+			clear: left;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>09-1 배경을 설정해보자</h1></a>
+		</div>
+	</header>
+	<main>
+		<p>div 밖에 있는 p 태그</p>
+		<div id="mainMenu">
+			<p class="p">class p태그에 설정 body 아래에 있는 p 태그</p>
+			<p>body 아래에 있는 p 태그, div 안에 있는 p 태그</p>
+			<div class="back">
+				어떻게 나오는가?<br>
+				어떻게 나오는가?
+			</div>
+			<div class="desc" id="clip-border">test해보자.</div>
+			<div class="desc" id="clip-padding">test해보자.</div>
+			<div class="desc" id="clip-content">test해보자.</div>
+		</div>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_09.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

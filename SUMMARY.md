@@ -53,7 +53,6 @@
 * [chapter 12-03](hoh/12-03.%20Flex.md)
 * [chapter 12-04](hoh/12-04.%20Grid.md)
 
-
 ## hyna
 
 * [Chapter 01-03](hyna/Chapter\_01-03.md)
@@ -61,6 +60,9 @@
 * [Chapter 05](hyna/Chapter\_05.md)
 * [Chapter 06](hyna/Chapter\_06.md)
 * [Chapter 07](hyna/Chapter\_07.md)
+* [Chapter 08](hyna/Chapter\_08.md)
+* [Chapter 09](hyna/Chapter\_09.md)
+* [Chapter 10](hyna/Chapter\_10.md)
 
 ## minsukan
 
@@ -68,15 +70,27 @@
 * [2주차 04-1 \~ 04-6](minsukan/웹스터디2주차/웹스터디2주차.md)
 * [3주차 05-1 \~ 05-4](minsukan/웹스터디3주차/웹스터디3주차.md)
 * [4주차 06 \~ 07](minsukan/웹스터디4주차/웹스터디4주차.md)
+* [5주차 08](minsukan/웹스터디5주차/웹스터디5주차.md)
+* [6주차 09](minsukan/웹스터디6주차/웹스터디6주차.md)
+* [7주차 10 ~ 11](minsukan/웹스터디7주차/웹스터디7주차.md)
 
 ## sumsong
 
-* [week 1](sumsong/week\_1.md)
-* [week 2](sumsong/week\_2.md)
-* [week 3](sumsong/week\_3.md)
+* [week 1](sumsong/week_1.md)
+* [week 2](sumsong/week_2.md)
+* [week 3](sumsong/week_3.md)
+* [week 4](sumsong/week_4.md)
+* [week 5](sumsong/week_5.md)
+* [week 6](sumsong/week_6.md)
 
 ## taeheoki
 
 * [HTML+CSS+자바스크립트](taeheoki/HTML+CSS+자바스크립트.md)
 * [2주차 - HTML 다양한 태그](taeheoki/04.md)
 * [3주차 - HTML form 태그](taeheoki/05.md)
+* [4주차 - CSS의 기본](taeheoki/06.md)
+* [4주차 - 텍스트를 표현하는 다양한 스타일](taeheoki/07.md)
+* [5주차 - 레이아웃을 구성하는 CSS 박스 모델](taeheoki/08.md)
+* [6주차 - 이미지와 그라데이션 효과로 배경 꾸미기](taeheoki/09.md)
+* [7주차 - CSS 고급 선택자](taeheoki/10.md)
+* [7주차 - 트랜지션과 애니메이션](taeheoki/11.md)
