@@ -20,7 +20,7 @@
 		float:left;
 		/*border-right:1px solid #929292;*/
 		}
-		.top-menu :not( :last-child) {
+		.top-menu :not(:last-child) {
 			border-right:1px solid #929292;
 		}
 		.top-menu li a:link{
@@ -35,17 +35,18 @@
 		.top-menu li a:visited {
 		color:black;
 		}
+		.top_menu ul:last-child {color: red;}
 	</style>
 </head>
 <body>
 	<nav>
 		<ul class="top-menu">
-		<li><a href="#">메뉴1</a></li>
-		<li><a href="#">메뉴2</a></li>
-		<li><a href="#">메뉴3</a></li>
-		<li><a href="#">메뉴4</a></li>
-		<li><a href="#">메뉴5</a></li>
-		<li><a href="#">메뉴6</a></li>
+			<li><a href="#">메뉴1</a></li>
+			<li><a href="#">메뉴2</a></li>
+			<li><a href="#">메뉴3</a></li>
+			<li><a href="#">메뉴4</a></li>
+			<li><a href="#">메뉴5</a></li>
+			<li><a href="#">메뉴6</a></li>
 		</ul>
 	</nav>
 </body>
