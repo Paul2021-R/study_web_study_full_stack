@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about JavaScript.">
+	<meta name="author" content="taeheoki">
+	<title>Chapter_14</title>
+	<link rel="stylesheet" href="css/gugudan.css">
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>14-5 스타일 시트를 반영한 구구단</h1></a>
+		</div>
+	</header>
+	<main>
+		<h1>구구단</h1>
+	<script>
+		var i, j;
+
+		for (i = 1; i <= 9; ++i) {
+			document.write("<div>");
+			document.write("<h3>" + i + "단</h3>");
+			for (j = 1; j <= 9; ++j) {
+				document.write(i + " X" + j + " = " + i * j + "<br>");
+			}
+			document.write("</div>");
+		}
+	</script>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_14.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>
