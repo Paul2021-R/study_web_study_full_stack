@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about JavaScript.">
+	<meta name="author" content="taeheoki">
+	<title>Chapter_14</title>
+	<link rel="stylesheet" href="css/switch.css">
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>14-4 switch 문으로 조건 체크하기</h1></a>
+		</div>
+	</header>
+	<main>
+	<script>
+		var session = prompt("관심 세션을 선택해 주세요. 1-마케팅, 2-개발, 3-디자인");
+
+		switch (session) {
+			case "1" : document.write("<p>마케팅 세션은 <strong>201호</strong>에서 진행됩니다.</p>");
+				break;
+			case "2" : document.write("<p>개발 세션은 <strong>203호</strong>에서 진행됩니다.</p>");
+				break;
+			case "3" : document.write("<p>디자인 세션은 <strong>205호</strong>에서 진행됩니다.</p>");
+				break;
+			default : alert("잘못 입력했습니다.");
+		}
+	</script>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_14.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

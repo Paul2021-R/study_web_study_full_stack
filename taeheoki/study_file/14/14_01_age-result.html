@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about JavaScript.">
+	<meta name="author" content="taeheoki">
+	<title>Chapter_14</title>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>14-1 나이계산 프로그램 만들기</h1></a>
+		</div>
+	</header>
+	<main>
+	<script>
+		var currentYear = 2022;	// 기준 연도
+		var birthYear;					// 태어난 연도
+		var age;								// 저장할 나이
+
+		birthYear = prompt("태어난 연도를 입력하세요. (YYYY)", "");
+		age = currentYear - birthYear + 1;
+		document.write(currentYear + "년 현재<br>");
+		document.write(birthYear + "년에 태어난 사람의 나이는 " + age + "세입닌다.");
+	</script>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_14.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

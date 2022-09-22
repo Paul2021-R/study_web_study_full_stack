@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about JavaScript.">
+	<meta name="author" content="taeheoki">
+	<title>Chapter_14</title>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>14-4 3의 배수 확인하기 3</h1></a>
+		</div>
+	</header>
+	<main>
+	<script>
+    var userNumber = prompt("숫자를 입력하세요.");
+
+    if (userNumber != null) {   // 입력값이 null이 아니면 if~else 문을 실행
+      (userNumber % 3 === 0) ? alert("3의 배수입니다.") : alert("3의 배수가 아닙니다.");
+    }
+    else
+      alert("입력이 취소됐습니다."); // 입력값이 null이면 알림 창을 보여 줌
+	</script>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_14.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>
