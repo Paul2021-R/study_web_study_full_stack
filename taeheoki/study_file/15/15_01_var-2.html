@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about JavaScript.">
+	<meta name="author" content="taeheoki">
+	<title>Chapter_15</title>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>15-1 var 예약어를 사용한 지역 변수와 전역 변수</h1></a>
+		</div>
+	</header>
+	<main>
+		<script>
+			function addNumber() {
+				var sum = 10 + 20;	// 지역 변수 선언
+				multi = 10 * 20;		// 전역 변수 선언
+			}
+			addNumber();
+			console.log(multi);		// 전역 변수를 사용
+		</script>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_15.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

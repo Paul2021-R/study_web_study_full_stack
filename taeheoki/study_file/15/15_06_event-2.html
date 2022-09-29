@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about JavaScript.">
+	<meta name="author" content="taeheoki">
+	<title>Chapter_15</title>
+	<link rel="stylesheet" href="css/function.css">
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>15-6 버튼을 클릭하면 알림 창 표시하기</h1></a>
+		</div>
+	</header>
+	<main>
+		<ul class="ul">
+			<li class="script"><a class="a" href="#" onclick="changeBg('green')">Green</a></li>
+			<li class="script"><a class="a" href="#" onclick="changeBg('orange')">Orange</a></li>
+			<li class="script"><a class="a" href="#" onclick="changeBg('purple')">Purple</a></li>
+		</ul>		
+		<div id="result"></div>
+
+		<script>
+			function changeBg(color) {
+				var result = document.querySelector('#result');
+				result.style.backgroundColor = color;
+			}
+		</script>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_15.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>
