@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about JavaScript.">
+	<meta name="author" content="taeheoki">
+	<title>Chapter_16</title>
+	<style>
+		#container{
+			margin:50px auto;
+			width:300px;
+			height:300px;
+			border-radius:50%;
+			border:2px double #222;
+			background-color:#d8f0fc;
+			text-align: center;
+		}
+		h2 {
+			margin-top:80px;
+		}
+		.accent {
+			font-size:1.8em;
+			font-weight:bold;
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>16-2 날짜 계산하는 프로그램 만들기</h1></a>
+		</div>
+	</header>
+	<main>
+		<h2>slice 메서드 사용하기</h2>
+		<div id="container">
+			<h2>책 읽기</h2>
+			<p><span class="accent" id="result"></span>일 연속으로 <br> 책 읽기를 달성했군요.</p>
+			<p>축하합니다!</p>
+		</div>
+		<script>
+			var now = new Date();
+			var firstDay = new Date("2020-10-01");
+
+			var toNow = now.getTime();
+			var toFirst = firstDay.getTime();
+			var passedTime = toNow - toFirst;
+
+			passedTime = Math.round(passedTime/(1000*60*60*24));
+
+			document.querySelector('#result').innerText = passedTime;
+		</script>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_16.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

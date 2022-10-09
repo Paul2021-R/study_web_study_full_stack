@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about JavaScript.">
+	<meta name="author" content="taeheoki">
+	<title>Chapter_16</title>
+	<style>
+		#container {
+			width:500px;
+			margin:10px auto;
+		}
+		#display {
+			margin-top:10px;
+			padding:10px;
+			border:1px solid #222;
+			box-shadow: 1px 0 1px #ccc;			
+		}
+		p {
+			font-size:1em;
+		}
+		button {
+			margin-top:20px;
+			text-align:center;
+		}
+	</style>
+</head>
+<body onload="openPopup()">
+	<header>
+		<div id="logo">
+			<h1>16-3 사이트 위치 고정하기</h1></a>
+		</div>
+	</header>
+	<main>
+		<div id="container">
+			<h2>location 객체</h2>
+			<div id="display">
+				<script>
+					document.write("<p><b>location.href : </b>" + location.href + "</p>");
+					document.write("<p><b>location.host : </b>" + location.host + "</p>");
+					document.write("<p><b>location.protocol : </b>" + location.protocol + "</p>");
+				</script>
+			</div>
+		</div>
+		<button onclick="location.replace('https://www.naver.com')">네이버 홈페이지로 이동하기</button>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_16.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

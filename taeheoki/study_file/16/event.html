@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about JavaScript.">
+	<meta name="author" content="taeheoki">
+	<title>Chapter_16</title>
+	<style>
+		h2 {
+				border:1px solid black;
+				padding:10px;
+				text-align:center;
+				background:#eee;
+			}
+	</style>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>16-2 이벤트 당첨자 뽑기 프로그램</h1></a>
+		</div>
+	</header>
+	<main>
+		<h2>당첨자 발표</h2>
+		</div>
+		<script>
+			var seed = prompt("전체 응모자 수: ","");
+			var picked = Math.floor(Math.random() * seed + 1);
+
+			document.write("전체 응모자 수: " + seed + "명");
+			document.write("<br>");
+			document.write("당첨자: " + picked + "번");
+		</script>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_16.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>
