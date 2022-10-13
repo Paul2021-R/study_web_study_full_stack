@@ -87,6 +87,7 @@
 * [Chapter 12](hyna/Chapter\_12.md)
 * [Chapter 13](hyna/Chapter\_13.md)
 * [Chapter 14](hyna/Chapter\_14.md)
+* [Chapter 15](hyna/Chapter\_15.md)
 
 ## minsukan
 
