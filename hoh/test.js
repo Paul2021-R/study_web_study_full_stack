@@ -1,15 +1,13 @@
-/*function Person(name, gender) {
-	this.name = name;
-	this.gender = gender;
-}
+var funcs = [];
 
-const v = Person("hi", "hi");
-console.log(v);*/
+	// 함수의 배열을 생성하는 for 루프의 i는 전역 변수다.
+	for (let i = 0; i < 3; i++) {
+	funcs.push(function () { console.log(i); });
+	}
 
+	// 배열에서 함수를 꺼내어 호출한다.
+	for (var j = 0; j < 3; j++) {
+	funcs[j]();
+	}
 
-let count = function() {
-    console.log('count는 1이다.');
-}
-count();
-
-console.dir(count);
+	const e = event;
