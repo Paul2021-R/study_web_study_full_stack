@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about JavaScript.">
+	<meta name="author" content="taeheoki">
+	<title>Chapter_17</title>
+	<style>
+		#container{
+			width:500px;
+			margin:10px auto;
+			padding:20px;
+		}
+		#info {
+			margin-top:20px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>17-4 링크를 클릭하면 텍스트와 이미지 표시하기</h1></a>
+		</div>
+	</header>
+	<main>
+		<div id="container">
+			<h1>DOM을 공부합시다</h1>
+			<a href="#" onclick="addContents(); this.onclick='';">더 보기</a>
+			<div id="info"></div>
+		</div>
+
+		<script>
+			function addContents() {
+				var newP = document.createElement("p");
+				var txtNode = document.createTextNode("DOM은 Document Object Model의 줄임말입니다.");
+				newP.appendChild(txtNode);
+
+				var newImg = document.createElement("img");
+				var srcNode = document.createAttribute("src");
+				var altNode = document.createAttribute("alt");
+				srcNode.value = "images/dom.jpg";
+				altNode.value = "돔 트리 예제 이미지";
+				newImg.setAttributeNode(srcNode);
+				newImg.setAttributeNode(altNode);
+
+				document.getElementById("info").appendChild(newP);
+				document.getElementById("info").appendChild(newImg);
+			}
+		</script>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_17.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

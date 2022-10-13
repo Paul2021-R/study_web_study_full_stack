@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about JavaScript.">
+	<meta name="author" content="taeheoki">
+	<title>Chapter_17</title>
+	<link rel="stylesheet" href="css/nodelist.css">
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>재밌네</h1></a>
+		</div>
+	</header>
+	<main>
+		<script>
+			var funcs = [];
+
+			// 함수의 배열을 생성하는 for 루프의 i는 전역 변수다.
+			for (let i = 0; i < 3; i++) {
+			funcs.push(function () { console.log(i); });
+			alert(i);
+			}
+
+			// 배열에서 함수를 꺼내어 호출한다.
+			for (var j = 0; j < 3; j++) {
+				funcs[j]();
+			}
+		</script>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_17.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about JavaScript.">
+	<meta name="author" content="taeheoki">
+	<title>Chapter_17</title>
+	<style>
+		#container {
+			width: 300px;
+			margin: 10px auto;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>17-3 이미지를 클릭하면 알림 창 표시하기</h1></a>
+		</div>
+	</header>
+	<main>
+		<div id="container">
+			<img src="images/cup-1.png" id="cup">
+		</div>
+
+		<script>
+			var cup = document.querySelector("#cup");
+			cup.onclick = function() {
+				alert("이미지를 클릭했습니다.");
+			}
+		</script>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_17.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>
