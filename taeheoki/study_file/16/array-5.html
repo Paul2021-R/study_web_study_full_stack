@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about JavaScript.">
+	<meta name="author" content="taeheoki">
+	<title>Chapter_16</title>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>16-2 slice() 메서드의 인수가 1개인 경우 요소 꺼내기</h1></a>
+		</div>
+	</header>
+	<main>
+		<h1>slice 메서드 사용하기</h1>
+		<script>
+			// 추출한 요소로 배열 만듦, 기존 배열 변경안됨
+			var colors = ["red", "green", "blue", "white", "black"];
+			var colors2 = colors.slice(2);		// 인덱스 2부터 끝까지
+			document.write("color2: ", colors2, "<br>");
+			document.write("colors: ", colors);
+			document.write("<hr>");
+			var colors3 = colors.slice(2, 4);	// 인덱스 2, 3
+			document.write("color3: ", colors3);
+		</script>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_16.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

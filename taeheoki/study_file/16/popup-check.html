@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about JavaScript.">
+	<meta name="author" content="taeheoki">
+	<title>Chapter_16</title>
+</head>
+<body onload="openPopup()">
+	<header>
+		<div id="logo">
+			<h1>16-3 팝업이 차단된 브라우저의 알림 창 표시하기</h1></a>
+		</div>
+	</header>
+	<main>
+		<p>문서를 열면 팝업 창이 표시됩니다.</p>
+		<script>
+			var blocked = false;
+			function openPopup() {
+				var newWin = window.open("notice.html", "pop", "width=500, height=400");
+				if (newWin == null) {
+					alert("팝업이 차단되어 있습니다. 팝업 차단을 해제해 주세요.")
+				}
+				newWin.moveBy(100, 100);
+			}
+		</script>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_16.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

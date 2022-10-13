@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about JavaScript.">
+	<meta name="author" content="taeheoki">
+	<title>Chapter_17</title>
+	<style>
+		#container {
+			width: 300px;
+			margin: 10px auto;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>17-3 this 예약어 사용하기</h1></a>
+		</div>
+	</header>
+	<main>
+		<div id="container">
+			<img src="images/cup-1.png" id="cup">
+		</div>
+
+		<script>
+			var cup = document.getElementById("cup");
+			cup.onclick = function(event) {
+				alert("클릭한 이미지 파일 : " + this.src);
+			}
+		</script>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_17.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

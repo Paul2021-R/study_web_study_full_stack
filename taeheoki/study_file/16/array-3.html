@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="css_practice">
+	<meta name="description" content="Practice about JavaScript.">
+	<meta name="author" content="taeheoki">
+	<title>Chapter_16</title>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h1>16-2 배열을 만들고 요소 표시하기</h1></a>
+		</div>
+	</header>
+	<main>
+		<h1>배열의 각 요소</h1>
+		<script>
+			var nums = [1, 2, 3];
+			var chars = ["a", "b", "c", "d"];
+
+			// 두 개의 배열 합치기
+			var numsChars = nums.concat(chars);
+			var charsNums = chars.concat(nums);
+			document.write("nums에 chars 합치면 : ", numsChars, "<br> chars에 nums 합치면 : ", charsNums);
+			document.write("<hr>");
+
+			// 배열 내의 요소 합치기
+			var string1 = nums.join();
+			document.write("구분자 없이 : ", string1);
+			document.write("<br>");
+			var string2 = chars.join('/');
+			document.write("/ 구분자 지정 : ", string2);
+			document.write("<hr>");
+
+			// 요소 추가하기 - 새로운 length값 반환
+			var ret1 = nums.push(4, 5);	// 배열 맨 끝에 새로운 요소를 추가
+			document.write("length: ", ret1, " | 배열: ", nums);
+			document.write("<br>");
+			var ret2 = nums.unshift(0);	// 배열 맨 앞에 새로운 요소를 추가
+			document.write("length: ", ret2, " | 배열: ", nums);
+			document.write("<hr>");
+
+			// 요소 꺼내기 - 꺼낸 요솟값 반환
+			var popped1 = chars.pop();		// 마지막 요소 꺼냄
+			document.write("꺼낸 요소: ", popped1, " | 배열: ", chars);
+			document.write("<br>");
+			var popped2 = chars.shift();		// 1번째 요소 꺼냄
+			document.write("꺼낸 요소: ", popped2, " | 배열: ", chars);
+			document.write("<hr>");
+
+			// splice() - 인수가 1개인 경우
+			var numbers = [1, 2, 3, 4, 5];
+			var newNumbers = numbers.splice(2);
+			document.write("반환된 배열: ", newNumbers, "<br>");
+			document.write("반환된 배열: " + newNumbers + "<br>");
+			document.write("변경된 배열: ", numbers, "<hr>");
+
+			// splice() - 인수가 2개인 경우
+			var study = ["html", "css", "web", "jquery"];
+			var newStudy = study.splice(2, 1);
+			document.write("반환된 배열: ", newStudy, "<br>");
+			document.write("반환된 배열: " + newStudy + "<br>");
+			document.write("변경된 배열: ", study, "<hr>");
+
+			// splice() - 인수가 3개 이상인 경우
+			var study = ["html", "css", "web", "jquery"];
+			var newStudy2 = study.splice(1, 2, "js", "js2", "js3", "js4");
+			document.write("반환된 배열: ", newStudy2, "<br>");
+			document.write("반환된 배열: " + newStudy2 + "<br>");
+			document.write("변경된 배열: ", study, "<hr>");
+		</script>
+	</main>
+	<footer>
+		<div id="bottomMenu">
+			<ul>
+				<li><a href="practice_16.html">홈으로</a></li>
+				<li><a href="#">자기소개</a></li>
+				<li><a href="#">프로젝트</a></li>
+				<li><a href="#">개인정보방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">연락처</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>
