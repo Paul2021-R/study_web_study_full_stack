@@ -460,3 +460,29 @@ ex) 웹 요소를 클릭했을 때 실행할 함수 연결
 
 `querySelector()`를 사용하여 웹 요소를 가져오는 방법  
 괄호 안에는 클래스 이름이나 id 이름 또는 다양한 선택자를 넣을 수 있음  
+
+```js
+// 방법 1 : 웹 요소를 변수로 지정 & 미리 만든 함수 사용
+var changeBttn = document.querySelector("#change");
+changeBttn.onclick = changeColor;
+
+function changeColor() {
+	document.querySelector("p").style.color = "#f00";
+}
+```
+
+```js
+// 방법 2 : 웹 요소를 따로 변수로 만들지 않고 사용
+document.querySelector("#change").onclick = changeColor;
+
+function changeColor() {
+	document.querySelector("p").style.color = "#f00";
+}
+```
+
+```js
+// 방법 3 : 함수를 직접 선언
+document.querySelector("#change").onclick = function () {
+	document.querySelector("p").style.color = "#f00";
+};
+```
