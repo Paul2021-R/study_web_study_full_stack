@@ -107,6 +107,10 @@
 * [week 4](sumsong/week_4.md)
 * [week 5](sumsong/week_5.md)
 * [week 6](sumsong/week_6.md)
+* [week 7](sumsong/week_7.md)
+* [week 8](sumsong/week_8.md)
+* [week 9](sumsong/week_9.md)
+* [week 10~js](sumsong/week_10_js.md)
 
 ## taeheoki
 
