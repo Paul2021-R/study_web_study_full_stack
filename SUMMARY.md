@@ -113,7 +113,7 @@
 * [week 10~js](sumsong/week_10_js.md)
 
 ## youjeon
-* [week_01](youjeon/Java_01.md)
+* [Java_01](youjeon/Java_01.md)
 
 ## taeheoki
 
