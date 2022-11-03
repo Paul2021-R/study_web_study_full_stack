@@ -111,6 +111,7 @@
 * [week 8](sumsong/week_8.md)
 * [week 9](sumsong/week_9.md)
 * [week 10~js](sumsong/week_10_js.md)
+* [jump to java](sumsong/jump2java.md)
 
 ## taeheoki
 
