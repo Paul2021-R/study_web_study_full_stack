@@ -112,6 +112,9 @@
 * [week 9](sumsong/week_9.md)
 * [week 10~js](sumsong/week_10_js.md)
 
+## youjeon
+* [week_01](youjeon/Java_01.md)
+
 ## taeheoki
 
 * [HTML+CSS+자바스크립트](taeheoki/HTML+CSS+자바스크립트.md)
