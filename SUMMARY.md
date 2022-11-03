@@ -88,6 +88,7 @@
 * [Chapter 13](hyna/Chapter\_13.md)
 * [Chapter 14](hyna/Chapter\_14.md)
 * [Chapter 15](hyna/Chapter\_15.md)
+* [Jump to JAVA week1](hyna/Jump2Java_week1.md)
 
 ## minsukan
 
