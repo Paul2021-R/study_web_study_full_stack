@@ -124,9 +124,6 @@
 * [jump to java](sumsong/jump2java.md)
 
 ## youjeon
-- [01](youjeon/자바 1주차.md)
-
-## youjeon
 * [Java_01](youjeon/Java_01.md)
 
 ## taeheoki
