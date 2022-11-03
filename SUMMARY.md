@@ -88,6 +88,9 @@
 * [week 5](sumsong/week_5.md)
 * [week 6](sumsong/week_6.md)
 
+## youjeon
+- [01](youjeon/자바 1주차.md)
+
 ## taeheoki
 
 * [HTML+CSS+자바스크립트](taeheoki/HTML+CSS+자바스크립트.md)
