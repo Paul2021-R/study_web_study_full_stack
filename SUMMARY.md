@@ -71,6 +71,11 @@
 
 * [chapter 15-00](hoh/15-00.var%2C%20let%2C%20const.md)
 * [chapter 15-01](hoh/15-01.%20%ED%95%A8%EC%88%98.md)  
+* [chapter 15-02](hoh/15-02.var%2C%20let%2C%20const.md)  
+
+* [chapter 16-01](hoh/16-01.%20%ED%95%A8%EC%88%98.md)  
+* [chapter 16-02](hoh/16-02.%20%ED%95%A8%EC%88%98.md)  
+* [chapter 16-03](hoh/16-03.%20%ED%95%A8%EC%88%98.md)  
 
 
 ## hyna
