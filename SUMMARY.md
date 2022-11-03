@@ -121,6 +121,9 @@
 * [week 10~js](sumsong/week_10_js.md)
 * [jump to java](sumsong/jump2java.md)
 
+## youjeon
+- [01](youjeon/자바 1주차.md)
+
 ## taeheoki
 
 * [HTML+CSS+자바스크립트](taeheoki/HTML+CSS+자바스크립트.md)
