@@ -29,7 +29,6 @@
     
     ![Screen Shot 2022-11-03 at 4.00.23 PM.png](img/Screen_Shot_2022-11-03_at_4.00.23_PM.png)
     
-    ㄴ
     
     vi 로 [Hello.java](http://Hello.java) 를 만들어서 아래 코드를 집어넣고 javac 로 컴파일 후 java로 컴파일 한 파일을 실행해서 정상적으로 동작하는지 살펴보자 
     
@@ -333,8 +332,3 @@
             }
         }
         ```
-        
-
-- 추가 정리
-
-- 프로젝트 시작
