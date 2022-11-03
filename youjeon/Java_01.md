@@ -214,7 +214,7 @@
                         ret = ret + n;
                     n++;
                 }
-        				System.out.println("Result: ");
+                System.out.println("Result: ");
                 System.out.println(ret);
             }
         }
