@@ -107,6 +107,12 @@
 * [5주차 08](minsukan/웹스터디5주차/웹스터디5주차.md)
 * [6주차 09](minsukan/웹스터디6주차/웹스터디6주차.md)
 * [7주차 10 ~ 11](minsukan/웹스터디7주차/웹스터디7주차.md)
+* [8주차](minsukan/all/웹스터디8주차.md)
+* [chapter 13](minsukan/all/13_chapter.md)
+* [chapter 14](minsukan/all/14_chapter.md)
+* [chapter 15](minsukan/all/15_chapter.md)
+* [chapter 16](minsukan/all/16_chapter.md)
+* [chapter 17](minsukan/all/17_chapter.md)
 * [자바1주차](minsukan/자바스터디1주차/1주차.md)
 
 ## sumsong
