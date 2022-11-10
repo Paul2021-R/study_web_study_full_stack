@@ -12,6 +12,7 @@
 6. 플랫폼 독립적이다 (Platform independent)
 7. 멀티 쓰레딩을 지원한다 (Multithreaded)
 8. 동적이다 (Dynamic)
+<br>
 
 # 02 자바 시작하기
 ## 자바 소스코드의 구조
@@ -66,6 +67,7 @@ int i;
 char c;
 float myWidth;
 ```
+<br>
 
 # 03 자료형
 ## 숫자 (Number)
@@ -189,3 +191,28 @@ double d1 = n1; // double 123.0
 **final**  
 - 자바의 final은 자료형에 값을 단 한번만 설정할수 있게 강제하는 키워드
 - 프로그램 수행 도중 그 값이 변경되면 안되는 상황에 사용  
+<br>
+
+# 04 제어문
+## for each문
+구조  
+```java
+for (type var: iterate) {
+    body-of-loop
+}
+```
+- iterate는 루프를 돌릴 객체  
+- 이 객체에서 한개씩 순차적으로 var에 대입되어 for문이 수행됨.  
+- iterate로 사용할 수 있는 자료형은 루프를 돌릴수 있는 자료형(배열 및 ArrayList 등)만 가능  
+
+*따로 반복 횟수를 명시적으로 주는 것이 불가능하고 1스탭씩 순차적으로 반복될때만 사용 가능  
+<br>
+
+예제  
+```java
+String[] numbers = {"one", "two", "three"};
+for(String number: numbers) {
+    System.out.println(number);
+	// one\n, two\n, three\n가 순서대로 출력
+}
+```
