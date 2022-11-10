@@ -419,3 +419,156 @@ C++, 파이썬 등 많은 언어들이 다중 상속을 지원하지만
 -> 자바는 **다중 상속을 지원하지 않는다.**  
   
 ※ 다중상속을 지원하는 다른 언어들은 동일한 이름의 메소드를 상속받는 경우 우선순위 등을 적용하여 해결한다.
+
+## 인터페이스
+```java
+interface Predator {
+}
+```
+- 인터페이스는 `class`가 아닌 `interface` 라는 키워드를 이용하여 작성  
+- 인터페이스는 클래스와 마찬가지로 Predator.java와 같은 단독 파일로 저장하는 것이 일반적인 방법  
+  
+(예제) 인터페이스가 필요한 이유  
+
+```java
+class Animal {
+    String name;
+
+    void setName(String name) {
+        this.name = name;
+    }
+}
+
+class Tiger extends Animal {
+}
+
+class Lion extends Animal {
+}
+
+class ZooKeeper {
+    void feed(Tiger tiger) {  // 호랑이가 오면 사과를 던져 준다.
+        System.out.println("feed apple");
+    }
+
+    void feed(Lion lion) {  // 사자가 오면 바나나를 던져준다.
+        System.out.println("feed banana");
+    }
+}
+
+public class Sample {
+    public static void main(String[] args) {
+        ZooKeeper zooKeeper = new ZooKeeper();
+        Tiger tiger = new Tiger();
+        Lion lion = new Lion();
+        zooKeeper.feed(tiger);  // feed apple 출력
+        zooKeeper.feed(lion);  // feed banana 출력
+    }
+}
+```
+동물 클래스가 추가될때마다 feed 메소드를 추가해야 하는 번거로움이 있음  
+-> **이를 편리하게 하기 위해 인터페이스가 필요!**  
+  
+(예제) 인터페이스 `Predator`를 이용하여 수정
+```java
+...
+
+class Tiger extends Animal implements Predator {
+}
+
+class Lion extends Animal implements Predator {    
+}
+
+...
+
+class ZooKeeper {
+    void feed(Predator predator) {
+        System.out.println("feed apple");
+    }
+}
+
+...
+```
+- 인터페이스 구현은 `implements` 라는 키워드 사용  
+- `tiger`, `lion`은 각각 `Tiger`, `Lion`의 객체이면서 `Predator` 인터페이스의 객체이기도 함  
+  -> IS-A 관계가 인터페이스에도 마찬가지로 적용  
+  -> 이와 같이 객체가 한 개 이상의 자료형 타입을 갖게되는 특성을 다형성(폴리모티즘)이라고 함!  
+  
+
+### 인터페이스의 메소드
+```java
+interface Predator {
+    String getFood();
+}
+```
+인터페이스는 규칙이기 때문에  
+인터페이스의 메소드는 이름과 입출력에 대한 정의만 있고 그 내용은 없음  
+-> 예제에서 설정한 `getFood`라는 메소드는 인터페이스를 `implements`한 클래스들이 구현해야만 함  
+<br>
+
+```java
+class Tiger extends Animal implements Predator {
+    public String getFood() {
+        return "apple";
+    }
+}
+
+class Lion extends Animal implements Predator {
+    public String getFood() {
+        return "banana";
+    }
+}
+
+class ZooKeeper {
+    void feed(Predator predator) {
+        System.out.println("feed "+predator.getFood());
+    }
+}
+```
+※ 인터페이스의 메소드는 항상 `public`으로 구현해야 한다.  
+※ `implements` 키워드는 `extends` 다음에 와야 한다.  
+  
+**상속과 인터페이스**  
+- 상속 : 자식 클래스가 부모 클래스의 메소드를 오버라이딩하지 않고 사용할 수 있기 때문에 해당 메소드를 반드시 구현해야 한다는 "강제성"을 갖지 못함  
+- 인터페이스 : 인터페이스의 메소드를 반드시 구현해야 하는 "강제성"을 가짐  
+  
+
+### 디폴트 메서드
+```java
+interface Predator {
+    String getFood();
+
+    default void printFood() {
+        System.out.printf("my food is %s\n", getFood());
+    }
+}
+```
+- 디폴트 메서드는 메소드명 가장 앞에 "`default`" 라고 표기해야 함  
+- 이렇게 `Predator` 인터페이스에 `printFood` 디폴트 메서드를 구현하면 `Predator` 인터페이스를 구현한 `Tiger`, `Lion` 등의 실제 클래스는 `printFood` 메서드를 구현하지 않아도 사용할 수 있음  
+- 디폴트 메서드는 오버라이딩 가능 (`printFood` 메서드를 실제 클래스에서 다르게 구현하여 사용할수 있다.)  
+  
+
+### 스태틱 메서드
+(예제) interface 안에 스태틱 메서드 구현  
+```java
+interface Predator {
+    String getFood();
+
+    default void printFood() {
+        System.out.printf("my food is %s\n", getFood());
+    }
+
+    int LEG_COUNT = 4;  // 인터페이스 상수
+
+    static int speed() {
+        return LEG_COUNT * 30;
+    }
+}
+```
+사용할 때는 `Predator.speed();` . 
+  
+**인터페이스 상수**  
+위 코드에서 사용한 `int LEG_COUNT = 4;` 문장은 인터페이스에 정의한 상수  
+인터페이스에 정의한 상수는 `int LEG_COUNT=4;`처럼 `public static final`을 생략해도 자동으로 `public static final`이 적용되고 다른 형태의 상수 정의는 불가능  
+<br>
+
+## 다형성
