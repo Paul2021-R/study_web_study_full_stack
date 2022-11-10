@@ -34,7 +34,7 @@ c, c++등의 언어에서 만들어진 실행파일은 JVM같은 중간단계를
 
 #### main 메소드
 
-HelloWorld.class를 실행하기 위해 main 메소드를 작성해보자. 
+HelloWorld.class를 실행하기 위해 main 메소드를 작성해보자.
 
 ```java
 public class HelloWorld {
@@ -127,7 +127,7 @@ public class Sample {
 }
 ```
 
-> 
+>
 > 이 클래스의 클래스명은 Sample이다.
 
 
@@ -268,7 +268,7 @@ Animal cat;
 
 ### 주석이 적은 코드, 많은 코드, 어떤 게 더 좋은 코드인가?
 
-주석이 없는 코드가 좋은 코드라고 하지만, 이는 "주석이 없는 코드가 아니라 주석이 있을 필요가 없을 정도로 이해하기 쉽고 누가봐도 명확한 코드"를 뜻하는 것이다. 
+주석이 없는 코드가 좋은 코드라고 하지만, 이는 "주석이 없는 코드가 아니라 주석이 있을 필요가 없을 정도로 이해하기 쉽고 누가봐도 명확한 코드"를 뜻하는 것이다.
 
 이상적인 코드와 달리 내용도 불분명하고 도저히 이해불가한 코드에 주석은 필수적이다. 또는 헷갈리기 쉬운 부분도 주석은 꼭 필요하다.
 
@@ -282,7 +282,7 @@ Animal cat;
 
 ### 임시 백업
 
-주석을 사용하는 다른 이유에는 현재 작성한 소스코드의 특정 부분을 잠시 사용하지 않게 만들고 싶은 경우가 있다. 
+주석을 사용하는 다른 이유에는 현재 작성한 소스코드의 특정 부분을 잠시 사용하지 않게 만들고 싶은 경우가 있다.
 
 ## 자료형
 
@@ -298,7 +298,7 @@ long 변수에 값을 대입할 때, 대입하는 숫자 값이 `int`자료형�
 
 자바의 실수를 표현하기 위한 자료형은 `float`, `double`이다.
 
-자바에서 실수형은 디폴트가 `double`이므로 `float` 변수에 값을 대입할 때에는 `F`잡미사를 붙여 주어야 한다. 
+자바에서 실수형은 디폴트가 `double`이므로 `float` 변수에 값을 대입할 때에는 `F`잡미사를 붙여 주어야 한다.
 
 또는 과학적 지수 표현식으로 다음과 같이 사용할 수 있다.
 
@@ -315,7 +315,7 @@ double d2 = 1.234e2; // 1.234e2 == 123.4
 
 ### 숫자연산 ( +, -, *, /, % )
 
-자바의 사칙연산은 실생활에서 일반적으로 사용하는 사칙연산과 다를 바가 없다. 
+자바의 사칙연산은 실생활에서 일반적으로 사용하는 사칙연산과 다를 바가 없다.
 
 ### 증감연산 (--, ++)
 
@@ -376,7 +376,7 @@ System.out.println(a.equals(c)); // true 출력
 
 문자열 a와 문자열 b는 "hello"와 "java"로 서로 같지 않다. 따라서 equals 메소드 호출 시 false를 리턴한다. 문자열 a와 문자열 c는 "hello"로 동일하다. 따라서 true 리턴
 
-문자열의 값을 비교할 때는 반드시 `equals`를 사용해야 하낟. `==` 연산자를 사용할 경우 다음과 같은 경우가 발생할 수 있다. 
+문자열의 값을 비교할 때는 반드시 `equals`를 사용해야 한다. `==` 연산자를 사용할 경우 다음과 같은 경우가 발생할 수 있다.
 
 ```java
 String a = "hello";
@@ -389,7 +389,7 @@ System.out.println(a == b);  // false
 
 #### indexOf
 
-`indexOf`는 문자열에서 특정 문자가 시작되는 위치(인덱스)를 리턴한다. 
+`indexOf`는 문자열에서 특정 문자가 시작되는 위치(인덱스)를 리턴한다.
 
 ```java
 String a = "Hello Java";
@@ -416,7 +416,7 @@ System.out.println(a.charAt(6));  // "J" 출력
 
 #### replaceAll
 
-replaceAll은 문자열 중 특정 문자열을 다른 문자열로 바꾸고자 할 때 사용한다.
+`replaceAll`은 문자열 중 특정 문자열을 다른 문자열로 바꾸고자 할 때 사용한다.
 
 ```java
 String a = "Hello Java";
@@ -425,7 +425,7 @@ System.out.println(a.replaceAll("Java", "World"));  // Hello World 출력
 
 #### substring
 
-substring은 문자열 중 특정 부분을 뽑아낼 경우에 사용한다.
+`substring`은 문자열 중 특정 부분을 뽑아낼 경우에 사용한다.
 
 ```java
 String a = "Hello Java";
@@ -434,11 +434,11 @@ System.out.println(a.substring(0, 4));  // Hell 출력
 
 #### toUpperCase
 
-toUpperCase는 문자열을 모두 대문자로 변경할 때 사용한다.(반대는 toLowerCase)
+`toUpperCase`는 문자열을 모두 대문자로 변경할 때 사용한다.(반대는 `toLowerCase`)
 
 #### split
 
-split 메소드는 문자열을 특정 구분자로 분리하는 메소드이다.
+`split` 메소드는 문자열을 특정 구분자로 분리하는 메소드이다.
 
 ```java
 String a = "a:b:c:d";
@@ -479,11 +479,11 @@ System.out.println(String.format("I eat %d apples.", 3));  // "I eat 3 apples." 
 
 ## StringBuffer
 
-`StringBuffer`는 문자열을 추가하거나 변경 할 때 주로 사용하는 자료형이다. `StringBuffer`의 메소드들을 살펴보면서 `StringBuffer`의 사용법에 대해서 알아보자. 
+`StringBuffer`는 문자열을 추가하거나 변경 할 때 주로 사용하는 자료형이다. `StringBuffer`의 메소드들을 살펴보면서 `StringBuffer`의 사용법에 대해서 알아보자.
 
 ### append
 
-다음은 `StringBuffer` 객체를 생성하고 문자열을 생성하는 예제이다. 
+다음은 `StringBuffer` 객체를 생성하고 문자열을 생성하는 예제이다.
 
 ```java
 StringBuffer sb = new StringBuffer();  // StringBuffer 객체 sb 생성
@@ -523,7 +523,7 @@ String 자료형은 한 번 값이 생성되면 그 값을 변경할 수가 없�
 그것은 상황에 따라 다르다. StringBuffer 자료형은 String자료형보다 무거운 편에 속한다. `new StringBuffer()`로 객체를 생성하는 것은 일반 `String`을 사용하는 것보다 메모리 사용량도 많고 속도도 느리다. 따라서 문자열 추가나 변경등의 작업이 많을 경우애는 StringBuffer를, 문자열 변경 작업이 거의 없는 경우에는 그냥 String을 사용하는 것이 유리하다.
 
 > **StringBuilder**
-> StringBuffer와 비슷한 자료형으로 StringBuilder가 있다. StringBuilder의 사용법은 StringBuffer의 사용법과 동일하다. 
+> StringBuffer와 비슷한 자료형으로 StringBuilder가 있다. StringBuilder의 사용법은 StringBuffer의 사용법과 동일하다.
 > ```java
 > StringBuilder sb = new StringBuilder();
 > sb.append("hello");
@@ -565,7 +565,7 @@ int[] odds = { 1, 3, 5, 7, 9 };
 int[] odds = new int[5];
 ```
 
-배열은 자료형 타입 바로 옆에 `[]`기호를 사용하여 표현한다. 
+배열은 자료형 타입 바로 옆에 `[]`기호를 사용하여 표현한다.
 
 ### 배열의 길이는 고정되어 있다.
 
@@ -576,9 +576,3 @@ int[] odds = new int[5];
 ### 빈번한 배열의 오류
 
 > ArrayIndexOutOfBoundsException
-
-## 리스트
-
-리스트는 배열과 비슷한 자바의 자료형으로 배열보다 편리한 기능을 많이 가지고 있다.
-
-리스트와 배열의 가장 큰 차이는 크기가 정해져 있지 않고 동적으로 변한다는 점이다.
