@@ -205,7 +205,8 @@ for (type var: iterate) {
 - 이 객체에서 한개씩 순차적으로 var에 대입되어 for문이 수행됨.  
 - iterate로 사용할 수 있는 자료형은 루프를 돌릴수 있는 자료형(배열 및 ArrayList 등)만 가능  
 
-*따로 반복 횟수를 명시적으로 주는 것이 불가능하고 1스탭씩 순차적으로 반복될때만 사용 가능  
+※ 따로 반복 횟수를 명시적으로 주는 것이 불가능하고 1스탭씩 순차적으로 반복될때만 사용 가능  
+※ 파이썬의 `for ~ in` 문과 비슷  
 <br>
 
 예제  
@@ -216,3 +217,205 @@ for(String number: numbers) {
 	// one\n, two\n, three\n가 순서대로 출력
 }
 ```
+<br>
+
+# 05 객체지향 프로그래밍
+## 매개변수와 인수
+**※ 매번 정리하지만 묘하게 헷갈리는..**
+매개변수는 '받고' 인수는 '준다' !  
+ex) 매개변수로 `int a`와 `String str`을 받는다. 인수로 `1`과 `"hi"`를 준다.  
+
+## this 활용하기
+예제) 객체 `sample` 넘기기  
+```java
+public class Sample {
+
+	int a;  // 객체변수 a
+
+	void varTest(Sample sample) {
+		sample.a++;
+	}
+
+	public static void main(String[] args) {
+		Sample sample = new Sample();
+		sample.a = 1;
+		sample.varTest(sample);
+		System.out.println(sample.a);
+	}
+}
+```
+<br>
+
+`this`를 활용하면 객체인 `sample`을 굳이 넘겨줄 필요가 없다.  
+`varTest` 메소드 내에서 객체에 접근할 수 있기 때문  
+  
+예제) `this`를 사용해 변경한 코드
+```java
+public class Sample {
+
+	int a;  // 객체변수 a
+
+	void varTest() {
+		this.a++;
+	}
+
+	public static void main(String[] args) {
+		Sample sample = new Sample();
+		sample.a = 1;
+		sample.varTest();
+		System.out.println(sample.a);  // 2 출력
+	}
+}
+```
+<br>
+
+## 상속
+자식 클래스가 부모 클래스의 기능을 그대로 물려받을 수 있는 상속(Inheritance) 기능  
+(예제)  
+```java
+class Animal {
+	String name;
+
+	void setName(String name) {
+		this.name = name;
+	}
+}
+
+class Dog extends Animal {
+}
+
+public class Sample {
+	public static void main(String[] args) {
+		Dog dog = new Dog();
+		dog.setName("poppy");
+		System.out.println(dog.name);  // poppy 출력
+	}
+}
+```
+클래스 상속을 위해 사용하는 키워드 `extends` . 
+클래스를 상속했으므로 부모 클래스의 `setName` 메소드를 그대로 사용 가능  
+<br>
+
+### 부모 클래스의 기능을 확장
+(예제) `Animal`을 상속 받은 `Dog` 클래스에 `sleep` 메소드 추가 
+```java
+class Animal {
+	String name;
+
+	void setName(String name) {
+		this.name = name;
+	}
+}
+
+class Dog extends Animal {
+	void sleep() {
+		System.out.println(this.name+" zzz");
+	}
+}
+
+public class Sample {
+	public static void main(String[] args) {
+		Dog dog = new Dog();
+		dog.setName("poppy");
+		System.out.println(dog.name);  // poppy 출력
+		dog.sleep();  // poppy zzz 출력
+	}
+}
+```
+  
+### IS-A 관계
+`Dog` 클래스는 `Animal` 클래스를 상속.  
+즉, `Dog`는 `Animal`의 하위 개념.  
+`Dog`는 `Animal`에 포함되기 때문에 "개는 동물이다"라고 표현  
+즉 "`Dog` `is a` `Animal`"과 같이 말할 수 있는 관계를 IS-A 관계라고 함  
+  
+-> 자식 클래스의 객체는 부모 클래스의 자료형인 것처럼 사용할 수 있음!  
+반대로, 부모 클래스로 만든 객체를 자식 클래스의 자료형으로는 사용할 수 없음  
+
+```java
+Animal dog = new Dog();  // Dog is a Animal
+// 개로 만든 객체는 동물 자료형이다.
+```
+※ `Dog`객체를 `Animal` 자료형으로 사용할 경우에는 `Dog` 클래스에만 존재하는 `sleep` 메소드를 사용할 수 없다  
+  
+
+### Object 클래스
+자바에서 만드는 모든 클래스는 자동으로 Object 클래스를 상속받음.  
+따라서 자바에서 만드는 모든 객체는 Object 자료형으로 사용할 수 있음  
+```java
+Object animal = new Animal();  // Animal is a Object
+Object dog = new Dog();  // Dog is a Object
+```
+
+### 메소드 오버라이딩 (Method overriding)
+(예제) `Dog` 클래스를 구체화시키는 `HouseDog` 클래스
+```java
+class Animal {
+	String name;
+
+	void setName(String name) {
+		this.name = name;
+	}
+}
+
+class Dog extends Animal {
+	void sleep() {
+		System.out.println(this.name+" zzz");
+	}
+}
+
+class HouseDog extends Dog {
+}
+
+public class Sample {
+	public static void main(String[] args) {
+		HouseDog houseDog = new HouseDog();
+		houseDog.setName("happy");
+		houseDog.sleep();  // happy zzz 출력
+	}
+}
+```
+<br>
+
+(예제) `HouseDog`은 "happy zzz"가 아닌 "happy zzz in house"를 출력해야 한다고 가정  
+```java
+class HouseDog extends Dog {
+	void sleep() {
+		System.out.println(this.name + " zzz in house");
+	}
+}
+
+public class Sample {
+	public static void main(String[] args) {
+		HouseDog houseDog = new HouseDog();
+		houseDog.setName("happy");
+		houseDog.sleep();  // happy zzz in house 출력
+	}
+}
+```
+<br>
+
+`HouseDog` 클래스에 `Dog` 클래스와 동일한 형태(입출력이 동일)의 `sleep` 메소드를 구현하면  
+`HouseDog` 클래스의 `sleep` 메소드가 `Dog` 클래스의 `sleep` 메소드보다 더 높은 우선순위를 갖게 되어  
+`HouseDog` 클래스의 `sleep` 메소드가 호출되게 된다.  
+  
+-> 부모클래스의 메소드를 자식클래스가 동일한 형태로 또다시 구현하는 행위를 **메소드 오버라이딩(Method Overriding)** 이라고 한다. (※ 메소드 덮어쓰기)  
+
+### 메소드 오버로딩 (method overloading)
+(예제) `HouseDog` 클래스에 메소드 추가
+```java
+void sleep(int hour) {
+	System.out.println(this.name+" zzz in house for " + hour + " hours");
+} 
+```
+기존의 sleep이라는 메소드와 동일한 이름의 sleep 메소드 추가 생성  
+단, 메소드의 매개변수가 다를 경우만 가능  
+  
+-> 매개변수가 다른 동일한 이름의 메소드를 만들 수 있는데 이를 **메소드 오버로딩(method overloading)** 라고 함  
+
+### 다중 상속
+다중 상속은 클래스가 동시에 하나 이상의 클래스를 상속받는 것을 뜻한다.  
+C++, 파이썬 등 많은 언어들이 다중 상속을 지원하지만  
+-> 자바는 **다중 상속을 지원하지 않는다.**  
+  
+※ 다중상속을 지원하는 다른 언어들은 동일한 이름의 메소드를 상속받는 경우 우선순위 등을 적용하여 해결한다.
