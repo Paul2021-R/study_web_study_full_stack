@@ -14,6 +14,8 @@
 * [back_Java_01](haryu/05.md)
 * [back_Java_02](haryu/06.md)
 * [back_Java_03](haryu/07.md)
+* [back_Java_04](haryu/08.md)
+* [back_Java_04](haryu/09.md)
 
 ## hoh
 
