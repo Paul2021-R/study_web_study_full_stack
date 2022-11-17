@@ -681,4 +681,127 @@ abstract class Predator extends Animal {
 
 - abstract 메소드 외에 실제 메소드도 추가하여 사용할 수 있음
 - 추상 클래스는 인터페이스와는 달리 일반 클래스처럼 객체변수, 생성자, private 메서드 등을 가질 수 있음  
+<br>
 
+# 06 입출력
+## 콘솔 입력
+### InputStream
+- InputStream의 read 메소드는 1 byte씩 읽음  
+- 1 byte의 데이터는 byte 자료형이 아닌 int 자료형으로 저장됨 (0-255 사이의 정수값=아스키 코드값)  
+  -> byte 자료형에 받으려고 할 경우 에러 발생  
+  **java: incompatible types: possible lossy conversion from int to byte**
+
+```java
+import java.io.IOException; // 예외처리는 7장에서
+import java.io.InputStream; // 자바 내장 클래스
+
+public class Sample {
+    public static void main(String[] args) throws IOException {
+        InputStream in = System.in; // abc 입력
+
+        int a;
+        int b;
+        int c;
+
+        a = in.read();
+        b = in.read();
+        c = in.read();
+
+        System.out.println(a); // 97
+        System.out.println(b); // 98
+        System.out.println(c); // 99
+    }
+}
+```
+또는 byte배열을 만들어 저장하는 방법  
+```java
+public class Sample {
+    public static void main(String[] args) throws IOException {
+        InputStream in = System.in;
+
+        byte[] a = new byte[3];  // byte 배열을 만들어 저장
+        in.read(a);  // 메소드의 인자로 전달하면 배열에 저장됨
+
+        System.out.println(a[0]);
+        System.out.println(a[1]);
+        System.out.println(a[2]);
+    }
+}
+```
+  
+### InputStreamReader
+- InputStream과 달리 바이트 대신 문자로 입력 스트림을 읽을 수 있음
+- char 배열 (char [])로 받을 수 있음
+  -> String은 이 객체에서는 사용 불가
+  **java: incompatible types: char[] cannot be converted to java.lang.String**
+```java
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader; // import문 추가
+
+public class Sample {
+    public static void main(String[] args) throws IOException {
+        InputStream in = System.in; // abc 입력
+
+		// InputStream 객체를 인자로 받음
+        InputStreamReader reader = new InputStreamReader(in);
+		// byte 대신 char 배열 사용 가능
+        char[] a = new char[3];
+        reader.read(a);
+
+		// 한꺼번에 출력 가능
+        System.out.println(a); // abc
+    }
+}
+```
+  
+
+### BufferedReader
+- 엔터키를 입력할 때까지 사용자의 입력을 전부 받아들일 수 있음
+```java
+import java.io.IOException;
+import java.io.BufferedReader;  // import문 추가
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+public class Sample {
+    public static void main(String[] args) throws IOException {
+        InputStream in = System.in;
+		// InputStreamReader는 InputStream 객체를 인자로 받고
+        InputStreamReader reader = new InputStreamReader(in);
+		// BufferedReaer는 InputStreamReader 객체를 인자로 받음
+        BufferedReader br = new BufferedReader(reader);
+
+        String a = br.readLine(); // String 객체 사용 가능
+        System.out.println(a);
+    }
+}
+```
+
+※ 다음과 같이 기억해보자  
+InputStream - byte  
+InputStreamReader - character  
+BufferedReader - String  
+
+### Scanner
+Scanner라는 `java.util.Scanner` 클래스가 새로 추가됨
+```java
+import java.util.Scanner; // import
+
+public class Sample {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in); // InputStream을 생성자 입력으로 받음
+        System.out.println(sc.next());
+    }
+}
+```
+- Scanner 객체의 `next()` 메소드는 단어 하나(Token)를 읽어들임  
+- `next` - 단어
+- `nextLine` - 라인
+- `nextInt` - 정수
+<br>
+
+## 콘솔 출력
+`System.out`은 PrintStream 클래스의 객체  
+PrintStream은 콘솔에 값을 출력할 때 사용되는 클래스  
+`System.err`는 오류메시지를 출력할 경우에 사용  
