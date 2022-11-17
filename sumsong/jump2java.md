@@ -918,7 +918,7 @@ import java.io.IOException;
 
 public class Sample {
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new FileReader("c:/out.txt"));
+        BufferedReader br = new BufferedReader(new FileReader("./out.txt"));
         while(true) {
             String line = br.readLine();
 			// 더 이상 읽을 라인이 없을 경우 while 문을 빠져나간다.
