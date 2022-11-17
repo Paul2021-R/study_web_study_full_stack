@@ -805,3 +805,127 @@ public class Sample {
 `System.out`은 PrintStream 클래스의 객체  
 PrintStream은 콘솔에 값을 출력할 때 사용되는 클래스  
 `System.err`는 오류메시지를 출력할 경우에 사용  
+<br>
+
+## 파일 입출력
+### 파일 쓰기
+```java
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class Sample {
+    public static void main(String[] args) throws IOException {
+        FileOutputStream output = new FileOutputStream("./out.txt");
+        output.close(); // 사용한 파일 객체를 닫아줌
+    }
+}
+```
+- 파일 생성을 위해 FileOutputStream 클래스 사용  
+- FileOutputStream 객체를 생성하기 위해 생성자의 입력으로 파일명을 넘겨주어야 함  
+- 자바 프로그램이 종료할 때 사용한 파일 객체를 자동으로 닫아주지만, 직접 닫아주는 것이 좋음  
+
+### FileOutputStream
+```java
+public class Sample {
+    public static void main(String[] args) throws IOException {
+        FileOutputStream output = new FileOutputStream("./out.txt");
+        for (int i = 1; i < 11; i++) {
+            String data = i + " 번째 줄입니다.\n";
+            output.write(data.getBytes()); // String을 byte 배열로 변환
+        }
+        output.close();
+    }
+}
+```
+- InputStream과 마찬가지로 OutputStream 역시 바이트 단위로 데이터 처리  
+- FileOutputStream은 OutputStream 클래스를 상속받아 만든 클래스, 바이트 단위 처리  
+- byte 배열로 써야 하므로 String을 byte배열로 바꾸어 주는 `getBytes()` 메서드 이용  
+
+### FileWriter
+String을 byte배열로 변환해야 하기 때문에 FileOutputStream 대신 FileWriter 이용  
+```java
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Sample {
+    public static void main(String[] args) throws IOException {
+        FileWriter fw = new FileWriter("./out.txt");
+        for(int i=1; i<11; i++) {
+            String data = i+" 번째 줄입니다.\n";
+            fw.write(data); // byte 배열 대신 문자열(String) 사용
+        }
+        fw.close();
+    }
+}
+```  
+  
+### PrintWriter
+개행문자(\n)를 추가하는 불편함 해소를 위해 FileWriter 대신 PrintWriter를 사용  
+println이라는 메소드 사용할 수 있음  
+```java
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class Sample {
+    public static void main(String[] args) throws IOException {
+        PrintWriter pw = new PrintWriter("./out.txt");
+        for(int i=1; i<11; i++) {
+            String data = i+" 번째 줄입니다."; // 개행문자 없이
+            pw.println(data); // println 메소드 사용
+        }
+        pw.close();
+    }
+}
+```
+
+### 파일에 내용 추가하기
+```java
+(...)
+        PrintWriter fw2 = new PrintWriter("./out.txt", true);  // 파일을 추가 모드로 연다.
+        for (int i=11; i<21; i++) {
+            String data = i+" 번째 줄입니다.";
+            fw2.println(data);
+        }
+        fw2.close();
+    }
+}
+```
+- PrintWriter 생성자의 두번째 boolean 파라미터는 파일을 추가모드(append)로 열 것인지에 대한 구분값  
+- 추가모드로 열면 기존파일의 내용을 덮어쓰지 않고 이후부터 파일이 쓰여짐  
+- PrintWriter, FileWriter, FileOutputStream 모두 추가모드 사용 가능  
+  
+### 파일 읽기
+```java
+import java.io.FileInputStream;
+import java.io.IOException;
+
+public class Sample {
+    public static void main(String[] args) throws IOException {
+        byte[] b = new byte[1024];
+        FileInputStream input = new FileInputStream("/.out.txt");
+        input.read(b);
+        System.out.println(new String(b));  // byte 배열을 문자열로 변경하여 출력
+        input.close();
+    }
+}
+```
+FileInputStream 대신 FileReader와 BufferedReader의 조합을 사용하여 라인단위로 파일 읽기  
+BufferedReader의 `readLine` 메소드는 더이상 읽을 라인이 없을 경우 null 리턴  
+```java
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Sample {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new FileReader("c:/out.txt"));
+        while(true) {
+            String line = br.readLine();
+			// 더 이상 읽을 라인이 없을 경우 while 문을 빠져나간다.
+            if (line==null) break;
+            System.out.println(line);
+        }
+        br.close();
+    }
+}
+```
