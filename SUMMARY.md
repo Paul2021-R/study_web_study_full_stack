@@ -136,6 +136,7 @@
 
 ## youjeon
 * [Java_01](youjeon/Java_01.md)
+* [Java_02](youjeon/Java_02.md)
 
 ## taeheoki
 
