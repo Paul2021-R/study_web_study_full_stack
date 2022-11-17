@@ -116,6 +116,12 @@ int i = 100000;
 
 ## StringBuffer
 StringBuffer는 문자열을 추가하거나 변경 할 때 주로 사용하는 자료형  
+  
+StringBuffer 객체에 여러번 append를 하는 경우 StringBuffer 객체는 한번만 생성된다.  
+String 자료형은 + 연산이 있을 때마다 새로운 String 객체가 생성된다(문자열 간 + 연산이 있는 경우 자바는 자동으로 새로운 String 객체를 만들어 낸다).
+
+String 자료형은 한번 값이 생성되면 그 값을 변경할 수가 없다. 이렇게 값을 변경할 수 없는 것을 immutable 하다고 한다. trim, toUpperCase 등의 메소드를 보면 문자열이 변경되는 것 처럼 생각 될 수도 있지만 해당 메소드 수행 시 또 다른 String 객체를 생성하여 리턴할 뿐이다. 하지만 StringBuffer는 이와 반대로 값을 변경할 수 있다(mutable 하다). 즉 한번 생성된 값을 언제든지 수정할 수 있다.
+  
 StringBuffer 자료형은 String 자료형보다 무거운 편에 속함  
 `new StringBuffer()` 로 객체를 생성하는 것은 일반 String을 사용하는 것보다 메모리 사용량도 많고 속도도 느리므로  
 문자열 추가나 변경등의 작업이 많을 경우에는 StringBuffer를,  
@@ -292,7 +298,7 @@ public class Sample {
 	}
 }
 ```
-클래스 상속을 위해 사용하는 키워드 `extends` . 
+클래스 상속을 위해 사용하는 키워드 `extends`  
 클래스를 상속했으므로 부모 클래스의 `setName` 메소드를 그대로 사용 가능  
 <br>
 
@@ -327,7 +333,7 @@ public class Sample {
 `Dog` 클래스는 `Animal` 클래스를 상속.  
 즉, `Dog`는 `Animal`의 하위 개념.  
 `Dog`는 `Animal`에 포함되기 때문에 "개는 동물이다"라고 표현  
-즉 "`Dog` `is a` `Animal`"과 같이 말할 수 있는 관계를 IS-A 관계라고 함  
+즉 "`Dog` **`is a`** `Animal`"과 같이 말할 수 있는 관계를 IS-A 관계라고 함  
   
 -> 자식 클래스의 객체는 부모 클래스의 자료형인 것처럼 사용할 수 있음!  
 반대로, 부모 클래스로 만든 객체를 자식 클래스의 자료형으로는 사용할 수 없음  
@@ -572,3 +578,73 @@ interface Predator {
 <br>
 
 ## 다형성
+ex) Bouncer(경비원) 클래스 추가
+```java
+class Bouncer {
+    void barkAnimal(Animal animal) {
+        if (animal instanceof Tiger) {
+            System.out.println("어흥");
+        } else if (animal instanceof Lion) {
+            System.out.println("으르렁");
+        }
+    }
+}
+
+public class Sample {
+    public static void main(String[] args) {
+        ZooKeeper zooKeeper = new ZooKeeper();
+        Tiger tiger = new Tiger();
+        Lion lion = new Lion();
+
+        Bouncer bouncer= new Bouncer();
+        bouncer.barkAnimal(tiger);
+        bouncer.barkAnimal(lion);
+    }
+}
+```  
+  
+`instanceof` : 어떤 객체가 특정 클래스의 객체인지를 조사할 때 사용되는 내장 명령어  
+ex) `animal instanceof Tiget` -> "animal 객체는 Tiger 클래스로 만들어진 객체인가?"  
+  
+이 코드는 동물 클래스가 추가될 때마다 분기문이 추가되어야 하므로 좋지 않음  
+인터페이스를 통해 Barkable 인터페이스를 구현하도록 변경!  
+
+```java
+interface Barkable {
+    void bark();
+}
+
+class Tiger extends Animal implements Predator, Barkable {
+    public String getFood() {
+        return "apple";
+    }
+
+    public void bark() {
+        System.out.println("어흥");
+    }
+}
+
+class Bouncer {
+    void barkAnimal(Barkable animal) {  // Animal 대신 Barkable을 사용
+        animal.bark();
+    }
+}
+```
+
+위 예제에서 사용한 tiger, lion 객체는 각각 Tiger, Lion 클래스의 객체이면서  
+Animal 클래스의 객체이기도 하고 Barkable, Predator 인터페이스의 객체  
+이러한 이유로 barkAnimal 메소드의 입력 자료형을 Animal에서 Barkable 로 바꾸어 사용할 수 있는 것  
+  
+**다형성(Polymorphism)** : 이렇게 하나의 객체가 여러개의 자료형 타입을 가질 수 있는 것
+즉, `Tiger` 클래스의 객체는 다음과 같이 여러가지 자료형으로 표현할 수 있음  
+```java
+Tiger tiger = new Tiger();  // Tiger is a Tiger
+Animal animal = new Tiger();  // Tiger is a Animal
+Predator predator = new Tiger();  // Tiger is a Predator
+Barkable barkable = new Tiger();  // Tiger is a Barkable
+```
+※ 각각의 객체는 메소드가 서로 다름!
+※ `getFood` 메소드(`Predator` 인터페이스)와 `bark` 메소드(`Barkable` 인터페이스)를 모두 사용하고 싶다면, 두 인터페이스를 구현한 Tiger 클래스를 사용하거나 두 메소드를 모두 포함하는 새로운 인터페이스를 새로 만들어 사용하면 됨  
+  
+인터페이스는 일반 클래스와는 달리 `extends` 를 이용하여 여러개의 인터페이스(`Predator`, `Barkable`)를 동시에 상속할 수 있음. 즉, 다중 상속이 지원됨  
+※ 일반 클래스는 단일상속만 가능  
