@@ -646,5 +646,39 @@ Barkable barkable = new Tiger();  // Tiger is a Barkable
 ※ 각각의 객체는 메소드가 서로 다름!
 ※ `getFood` 메소드(`Predator` 인터페이스)와 `bark` 메소드(`Barkable` 인터페이스)를 모두 사용하고 싶다면, 두 인터페이스를 구현한 Tiger 클래스를 사용하거나 두 메소드를 모두 포함하는 새로운 인터페이스를 새로 만들어 사용하면 됨  
   
+```java
+interface BarkablePredator extends Predator, Barkable {
+}
+```
 인터페이스는 일반 클래스와는 달리 `extends` 를 이용하여 여러개의 인터페이스(`Predator`, `Barkable`)를 동시에 상속할 수 있음. 즉, 다중 상속이 지원됨  
 ※ 일반 클래스는 단일상속만 가능  
+<br>
+
+## 추상클래스
+추상클래스(Abstract Class)는 인터페이스의 역할도 하면서 클래스의 기능도 가지고 있는 클래스  
+```java
+abstract class Predator extends Animal {
+    abstract String getFood();
+
+    default void printFood() {  // default 를 제거한다.
+        System.out.printf("my food is %s\n", getFood());
+    }
+
+    static int LEG_COUNT = 4;  // 추상 클래스의 상수는 static 선언이 필요하다.
+    static int speed() {
+        return LEG_COUNT * 30;
+    }
+}
+```
+- 추상클래스는 class 앞에 abstract라고 표기해야 함  
+- 인터페이스의 메소드와 같은 역할을 하는 메소드(여기서는 getFood 메소드)에도 abstract 붙여야 함  
+- abstract 메소드는 인터페이스의 메소드와 마찬가지로 몸통이 없어서 abstract 클래스를 상속하는 클래스에서 해당 abstract 메소드를 구현해야만 함  
+  
+- Animal 클래스의 기능을 유지하기 위해 Animal 클래스를 상속함  
+- 디폴트 메서드는 더이상 사용할 수 없으므로 일반 메서드로 변경  
+- LEG_COUNT 상수는 인터페이스에서는 자동으로 static으로 인식하지만 추상 클래스는 명시적으로 static이라고 적어 주어야 함  
+※ 추상 클래스는 단독으로 객체를 생성할 수 없고, 반드시 추상 클래스를 상속한 실제 클래스를 통해서만 객체를 생성할 수 있음  
+
+- abstract 메소드 외에 실제 메소드도 추가하여 사용할 수 있음
+- 추상 클래스는 인터페이스와는 달리 일반 클래스처럼 객체변수, 생성자, private 메서드 등을 가질 수 있음  
+
